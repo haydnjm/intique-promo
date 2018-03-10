@@ -2,6 +2,17 @@ import React from 'react';
 import _ from 'lodash';
 import { Field } from 'redux-form';
 import FormField from './FormField';
+import styled from 'styled-components';
+
+const Form = styled.div`
+  width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+
+  background-color: #3b424c;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
+`;
 
 const BasicForm = ({
   fields,
@@ -25,7 +36,7 @@ const BasicForm = ({
     );
 
   return (
-    <div>
+    <Form>
       { !formSubmitted ?
         <form onSubmit={ handleSubmit(onSubmit) }>
           { renderFields() }
@@ -40,8 +51,7 @@ const BasicForm = ({
         :
         <h3>FORM SUBMITTED</h3>
       }
-
-    </div>
+    </Form>
   );
 };
 
