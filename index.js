@@ -15,7 +15,7 @@ db.once('open', () => {
   console.log('H database connected');
 });
 
-require('./routes/email')(app);
+require('./routes/survey')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets

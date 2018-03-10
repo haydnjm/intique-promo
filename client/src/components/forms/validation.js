@@ -3,23 +3,7 @@ const reEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(
 const reAlpha = /[A-z\- ]+/;
 const reTel = /[0-9\+\- ]+/;
 
-export const loginValidation = (values) => {
-  const errors = {};
-
-  if (!values.email) {
-    errors.email = 'Email required';
-  } else if (!reEmail.test(values.email)) {
-    errors.email = 'Invalid email address';
-  }
-
-  if (!values.password) {
-    errors.password = 'Password required';
-  }
-
-  return errors;
-};
-
-export const signupValidation = (values) => {
+export const compEntry = (values) => {
   const errors = {};
 
   if (!values.firstName) {
@@ -30,12 +14,12 @@ export const signupValidation = (values) => {
     errors.firstName = 'Names can be a maximum of 15 characters';
   }
 
-  if (!values.secondName) {
-    errors.secondName = 'Second name required!';
-  } else if (!reAlpha.test(values.secondName)) {
-    errors.secondName = 'Names cannot contain special characters';
-  } else if (values.secondName.length > 15) {
-    errors.secondName = 'Names can be a maximum of 15 characters';
+  if (!values.lastName) {
+    errors.lastName = 'Second name required!';
+  } else if (!reAlpha.test(values.lastName)) {
+    errors.lastName = 'Names cannot contain special characters';
+  } else if (values.lastName.length > 15) {
+    errors.lastName = 'Names can be a maximum of 15 characters';
   }
 
   if (!values.email) {
@@ -44,30 +28,55 @@ export const signupValidation = (values) => {
     errors.email = 'Invalid email address';
   }
 
-  if (!values.password) {
-    errors.password = 'Password required';
+  if (values.profession === 'Profession' || !values.profession) {
+    errors.profession = 'Please select a profession!';
   }
 
-  if (values.password !== values.confirmPassword) {
-    errors.confirmPassword = 'Passwords must match!';
+  if (values.age === 'Age' || !values.age) {
+    errors.age = 'Please select an age range!';
+  }
+
+  if (values.antiSpam) {
+    errors.antiSpam = 'No bots';
   }
 
   return errors;
 };
 
-export const dealerValidation = (values) => {
+export const dealerSignup = (values) => {
   const errors = {};
 
-  if (!values.business_name) {
-    errors.business_name = 'Please enter your business name';
+  if (!values.name) {
+    errors.name = 'You must enter a name!';
   }
 
-  if (!values.telephone) {
-    errors.telephone = 'Please enter your telephone number';
-  } else if (!reTel.test(values.telephone)) {
-    errors.telephone = 'This is not a valid telephone number';
+  if (!values.email) {
+    errors.email = 'You must enter an email address!';
+  }
+
+  if (!values.city) {
+    errors.city = 'Please enter the city that your busness operates from!';
+  }
+
+  if (values.favePlatform === 'What\'s your favourite platform to sell on?' || !values.favePlatform) {
+    errors.favePlatform = 'Please enter your favourite selling platform!';
+  }
+
+  if (values.reason === 'Why? change to checkboxes?' || !values.reason) {
+    errors.reason = 'Why do you like that playform?';
+  }
+
+  if (values.listingValue === 'How much would you like to list?' || !values.listingValue) {
+    errors.listingValue = 'Please enter roughly how much stock you\'d want to liston the website';
+  }
+
+  if (values.averagePrice === 'What\'s the average price of your items?' || !values.averagePrice) {
+    errors.averagePrice = 'Please enter the approximate average price of the items you\'d like to list';
+  }
+
+  if (values.shopfront === 'Would you like a personalised shopfront?' || !values.shopfront) {
+    errors.shopfront = 'Please enter if you\'d like to have a personalised boutique within the website';
   }
 
   return errors;
-
 };
