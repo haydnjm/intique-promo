@@ -38,7 +38,15 @@ export const COMPETITION_FIELDS = [
     type: 'select',
     label: 'Age',
     required: false,
-    selectOptions: ['10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80'],
+    selectOptions: [
+      '10-20 years',
+      '20-30 years',
+      '30-40 years',
+      '40-50 years',
+      '50-60 years',
+      '60-70 years',
+      '70+ years',
+    ],
   },
   { name: 'antiSpam', type: 'hidden', label: 'antiSpam', required: false },
 ];

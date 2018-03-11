@@ -13,7 +13,6 @@ const FormInput = styled.input`
   margin: auto;
   height: 30px;
   width: 90%;
-  padding-left: 10px;
   border: none;
   border-bottom: 1px solid #999;
   color: #ddd;

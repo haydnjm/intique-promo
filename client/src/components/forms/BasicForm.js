@@ -2,7 +2,17 @@ import React from 'react';
 import _ from 'lodash';
 import { Field } from 'redux-form';
 import FormField from './FormField';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const floatUp = keyframes`
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0vh);
+  }
+`;
 
 const Form = styled.div`
   width: 450px;
@@ -11,6 +21,27 @@ const Form = styled.div`
   padding: 30px;
   background-color: #3b424c;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
+
+  animation: ${floatUp} .3s cubic-bezier(.25,.82,.41,.99);
+`;
+
+const SubmitButton = styled.button`
+  display: block;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border: 3px solid #eddd4f;
+  border-radius: 10px;
+  background-color: #3b424c;
+  color: #eddd4f;
+  margin: auto;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color : #eddd4f;
+    color: #3b424c;
+  }
 `;
 
 const BasicForm = ({
@@ -43,7 +74,7 @@ const BasicForm = ({
             isLoading ?
             <span>Loading...</span>
             :
-            <button type="submit">{submit}</button>
+            <SubmitButton type="submit">{submit}</SubmitButton>
           }
           <div>{ status }</div>
         </form>

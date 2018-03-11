@@ -16,20 +16,30 @@ const FormButton = styled(Link)`
   width: 150px;
   text-align: center;
   margin: 50px;
+  overflow: hidden;
 
   border: none;
   border-radius: 10px;
   background-color: rgba(59, 66, 76, 0.5);
   color: #ddd;
+  box-shadow: 0px 3px 15px rgba(10,10,20,0.75);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const FormButtons = (props) =>
   <Buttons>
+    <FormButton to="/who-are-we">
+      <img src='/images/whoarewe.svg' alt="about"/>
+    </FormButton>
     <FormButton to="/enter-competition">
-      Enter our competition
+      <img src='/images/competition.svg' alt="competition"/>
     </FormButton>
     <FormButton to="/dealer-signup">
-      Signup to become a dealer
+      <img src='/images/shopfront.svg' alt="dealer signup"/>
     </FormButton>
   </Buttons>;
 
