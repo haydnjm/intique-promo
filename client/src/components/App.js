@@ -17,7 +17,7 @@ const Container = styled.div`
   margin: 0;
   background-color: #252628;
   color: #eddd4f;
-  background-image: url('/images/bg1.svg');
+  background-image: url('/images/bg2.svg');
   background-repeat: no-repeat;
   background-size: cover;
 `;
