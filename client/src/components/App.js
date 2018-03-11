@@ -2,20 +2,26 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
+import Footer from './Footer';
 
 const Container = styled.div`
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  position: relative;
+  font-family: 'Helvetica';
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   background-color: #252628;
   color: #eddd4f;
 `;
 
-const Header = styled.div`
-  padding: 50px;
-  text-align: center;
+const Banner = styled.img`
+  margin: 0 0 30px 0;
+  width: 100%;
 `;
 
 class App extends Component {
@@ -24,15 +30,13 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Container>
-          <Header>
-            <h1>Intique logo here</h1>
-            <Link to="/enter-competition"><button>Enter our competition</button></Link>
-            <Link to="/dealer-signup"><button>Signup to become a dealer</button></Link>
-          </Header>
+          <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
+          <Route exact path="/" component={FormButtons} />
           <div>
             <Route path="/enter-competition" component={ Competition }/>
             <Route path="/dealer-signup" component={ DealerSignup }/>
           </div>
+          <Footer />
         </Container>
       </BrowserRouter>
     );

@@ -67,7 +67,7 @@ export const dealerSignup = (values) => {
   }
 
   if (values.listingValue === 'How much would you like to list?' || !values.listingValue) {
-    errors.listingValue = 'Please enter roughly how much stock you\'d want to liston the website';
+    errors.listingValue = 'Please enter roughly how much stock you\'d want to list on the website';
   }
 
   if (values.averagePrice === 'What\'s the average price of your items?' || !values.averagePrice) {

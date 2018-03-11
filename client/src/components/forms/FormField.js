@@ -9,23 +9,23 @@ const FormFieldContainer = styled.div`
 `;
 
 const FormInput = styled.input`
+  display: block;
+  margin: auto;
   height: 30px;
-  width: 300px;
+  width: 90%;
   padding-left: 10px;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #ddd;
+  background-color: #3b424c;
 `;
 
-const FormSelect = styled.select`
-  height: 30px;
-  width: 300px;
-  padding-left: 10px;
-  border-radius: 5px;
-`;
+const FormSelect = FormInput.withComponent('select');
 
 const Error = styled.div`
   height: 10px;
+  margin: 0 20px;
   color: #e04c4c;
-  text-shadow: 0 0px 1px rgba(224, 76, 76, 0.75);
 `;
 
 export default ({ input, name, type, label, selectOptions, meta:{ touched, error } }) =>

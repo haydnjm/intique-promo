@@ -5,11 +5,10 @@ import FormField from './FormField';
 import styled from 'styled-components';
 
 const Form = styled.div`
-  width: 600px;
+  width: 450px;
   margin: auto;
   border-radius: 10px;
   padding: 30px;
-
   background-color: #3b424c;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
 `;
