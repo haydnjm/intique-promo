@@ -70,17 +70,3 @@ const DealerInfo = (props) =>
   </Wrapper>;
 
 export default DealerInfo;
-
-/*
-<p>
-  Our aim at Intique is provide a seemless, unobstructed
-    selling experience for our dealers. We do this buy charging a monthly
-    subscription fee. We don't take any commission on your sales and all
-    of your profit goes straight to you, the dealer. This means that we don't
-    need to force sales through our wesbite by hiding your own website or your
-    contact details. Sell your products, sell your brand, keep your profit!
-    Sign up to our dealer list today to get priority access to the website
-    when it is launched, as well as the first 2 months of your subscription for
-    free!
-</p>
-*/

@@ -5,6 +5,7 @@ import styled, { injectGlobal } from 'styled-components';
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
+import About from './About';
 import Footer from './Footer';
 
 import Nunito from 'typeface-nunito';
@@ -47,6 +48,7 @@ class App extends Component {
           <div>
             <Route path="/enter-competition" component={ Competition }/>
             <Route path="/dealer-signup" component={ DealerSignup }/>
+            <Route path="/who-are-we" component={ About }/>
           </div>
           <Footer />
         </Container>
