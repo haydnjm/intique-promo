@@ -25,8 +25,17 @@ class Competition extends Component {
   };
 
   render () {
+
+    const description = `Brighten up your home with this *details details
+      details details*. For your chance to win just enter your details below
+      and you'll be entered into the prize draw. We'll send you an email to
+      let you know when we'll be drawing the winning ticket and again if you
+      are the lucky winner of our prize! (We'll also pay for postage, so you've
+      got nothing to lose!)`;
+
     const { handleSubmit, statusMessage } = this.props;
     return <BasicForm
+             description={description}
              fields={COMPETITION_FIELDS}
              handleSubmit={handleSubmit}
              onSubmit={this.onSubmit}

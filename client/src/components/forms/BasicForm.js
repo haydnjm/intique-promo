@@ -45,6 +45,7 @@ const SubmitButton = styled.button`
 `;
 
 const BasicForm = ({
+  description,
   fields,
   handleSubmit,
   status,
@@ -67,6 +68,7 @@ const BasicForm = ({
 
   return (
     <Form>
+      <p>{description}</p>
       { !formSubmitted ?
         <form onSubmit={ handleSubmit(onSubmit) }>
           { renderFields() }

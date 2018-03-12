@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterDiv = styled.div`
-  height: 100px;
+  height: 120px;
   width: 100%;
   background-color: rgb(59, 66, 76);
   position: absolute;
@@ -12,9 +12,14 @@ const FooterDiv = styled.div`
   text-align: center;
 `;
 
+const FooterImg = styled.img`
+  height: 80px;
+  margin-top: 10px;
+`;
+
 const Footer = () =>
   <FooterDiv>
-    Footer
+    <FooterImg src="/images/logo.svg" alt="logo"/>
   </FooterDiv>;
 
 export default Footer;

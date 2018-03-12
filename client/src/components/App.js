@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
 import Footer from './Footer';
 
+import Nunito from 'typeface-nunito';
+
+injectGlobal`
+  @font-face {
+    font-family: Nunito;
+    src: url('${Nunito}') fromat('truetype');
+  }
+`;
+
 const Container = styled.div`
   box-sizing: border-box;
   padding-bottom: 150px;
   position: relative;
-  font-family: 'Helvetica';
   width: 100%;
+  font-family: Nunito;
   min-height: 100vh;
   margin: 0;
   background-color: #252628;
