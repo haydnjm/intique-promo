@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const FooterDiv = styled.div`
   height: 120px;
@@ -19,7 +20,7 @@ const FooterImg = styled.img`
 
 const Footer = () =>
   <FooterDiv>
-    <FooterImg src="/images/logo.svg" alt="logo"/>
+    <Link to="/"><FooterImg src="/images/logo.svg" alt="logo"/></Link>
   </FooterDiv>;
 
 export default Footer;

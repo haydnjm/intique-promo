@@ -2,68 +2,122 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 75%;
-  max-width: 600px;
+  width: 100%;
   margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: ${props => props.reverse ? 'row-reverse' : 'row'};
+  text-align: ${props => props.reverse ? 'right' : 'left'};
+  margin-bottom: 30px;
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+`;
+
+const Column = styled.div`
+  width: 50%;
+  min-width: 500px;
+`;
+
+const InfoGraph = styled.img`
+
 `;
 
 const About = () =>
   <Container>
-    <h1>About</h1>
-    <div>
-      <h2>What is Intique?</h2>
-      <p>
-        At Intique we are building *the first*? boutique style online marketplace
-        for vintage, mid-century and antique furniture. Our objective is to
-        offer an online marketplace which enables independent businesses to
-        thrive and buyers to discover dealers they love. Ranging from
-        traditional furnishings to mid-century and modernist, we are sure you
-        will find what you’re looking for on Intique.
-      </p>
-    </div>
-    <div>
-      <h2>Why sell with Intique?</h2>
-      <p>
-        We aim to help our sellers grow and offer a variety of tools to help
-        them do this. From company branding, shop interfaces, visible contact
-        details, a variety of selling packages and no seller commission we
-        will do what we can to help you grow your business to where you want
-        it to be.
-      </p>
-    </div>
-    <div>
-      <h2>Why buy with Intique?</h2>
-      <p>
-        We know how hard and time consuming it can be finding that perfect
-        piece of vintage furniture for your home whilst picking a seller you
-        can trust. Here at Intique all are sellers are certified and must meet
-        certain criteria before they can sell with us, so you know you are
-        buying from a trusted seller. Intique has bought some of the best
-        dealers across the UK all to one website for your convenience and have
-        also dedicated many hours to give our buyers a user experience like no
-        other.
-      </p>
-    </div>
-    <div>
-      <h2>***A bit about us?***</h2>
-      <p>
-        Maybe a short paragraph about us?
-      </p>
-    </div>
+    <Column>
+      <Row>
+        <InfoGraph src="/images/heads.svg" />
+        <Content>
+          <h2>What is Intique? you are->you're</h2>
+          <p>
+            At Intique we are building an online marketplace for vintage,
+            mid-century and antique furnishings. One of the hundreds of independent
+            sellers/businesses across the UK has the exact style for you, and we
+            want to help you find them.
+          </p>
+          <p>
+            But Initque isn't just about buying and selling
+            furniture. It's about connecting people, supporting independent
+            businesses, and helping people to find the perfect addition to their
+            home. Ranging from traditional furnishings to mid-century and
+            modernist, we are sure you will find what you’re looking for on Intique.
+          </p>
+        </Content>
+      </Row>
+      <Row>
+        <InfoGraph src="/images/heads.svg" />
+        <Content>
+          <h2>Is this just another online furniture marketplace?</h2>
+          <p>
+            There are many other great places online to find that G-Plan sideboard,
+            those Verner Panton chairs, or that Danish Teak coffee table. So why
+            come to us?
+          </p>
+          <p>
+            We're all about promoting the independent businesses whose passion it
+            is to source these amazing pieces. Because we don't take any commission,
+            we don't have to force their sales through our website. We can promote our
+            sellers, and allow them to sell the way they want, <i>1 - whether that
+            be through our website, through their own website, or in person! <i>OR </i>
+            2 - meaning you can really get to know who you are buying from, and
+            find the sellers that *love the stuff you love*</i>
+          </p>
+        </Content>
+      </Row>
+    </Column>
+
+    <Column>
+      <Row>
+        <InfoGraph src="/images/heads.svg" />
+        <Content>
+          <h2>Why sell with us?</h2>
+          <p>
+            At Intique, we want buyers to say 'we found it on Intique, we bought
+            it from *your business here*'. This is something that you don't get
+            from sales with our competitors.           
+          </p>
+          <ul>
+            <li>Personalised boutiques -> put your stamp on your sales</li>
+            <li>No commission</li>
+            <li>Sell your way -> sell through us, promote sales through your website, or organise in-person sales</li>
+          </ul>
+        </Content>
+      </Row>
+      <Row>
+        <InfoGraph src="/images/heads.svg" />
+        <Content>
+          <h2>Why buy with Intique?</h2>
+          <p>
+            We know how time consuming it can be to find that perfect
+            piece of vintage furniture for your home, whilst picking a seller that you
+            can trust. Here at Intique we verify all of our sellers, so you that know you are
+            buying from someone you can trust. We aim to bring the best independent
+            dealers from across the UK to one place, and strive to give our
+            buyers a user experience like no other.
+          </p>
+        </Content>
+      </Row>
+      <Row>
+        <InfoGraph src="/images/heads.svg" />
+        <Content>
+          <h2>***A bit about us?***</h2>
+          <p>
+            Maybe a short paragraph about us?
+          </p>
+        </Content>
+      </Row>
+    </Column>
   </Container>;
 
 export default About;
-
-/*
-<p>
-  Our aim at Intique is provide a seemless, unobstructed
-    selling experience for our dealers. We do this buy charging a monthly
-    subscription fee. We don't take any commission on your sales and all
-    of your profit goes straight to you, the dealer. This means that we don't
-    need to force sales through our wesbite by hiding your own website or your
-    contact details. Sell your products, sell your brand, keep your profit!
-    Sign up to our dealer list today to get priority access to the website
-    when it is launched, as well as the first 2 months of your subscription for
-    free!
-</p>
-*/
