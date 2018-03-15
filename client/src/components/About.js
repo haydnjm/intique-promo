@@ -39,9 +39,9 @@ const About = () =>
       <Row>
         <InfoGraph src="/images/heads.svg" />
         <Content>
-          <h2>What is Intique? you are->you're</h2>
+          <h2>What is Intique?</h2>
           <p>
-            At Intique we are building an online marketplace for vintage,
+            At Intique we're building an online marketplace for vintage,
             mid-century and antique furnishings. One of the hundreds of independent
             sellers/businesses across the UK has the exact style for you, and we
             want to help you find them.
@@ -51,14 +51,14 @@ const About = () =>
             furniture. It's about connecting people, supporting independent
             businesses, and helping people to find the perfect addition to their
             home. Ranging from traditional furnishings to mid-century and
-            modernist, we are sure you will find what you’re looking for on Intique.
+            modernist, we're sure you will find what you’re looking for on/at/from Intique.
           </p>
         </Content>
       </Row>
       <Row>
         <InfoGraph src="/images/heads.svg" />
         <Content>
-          <h2>Is this just another online furniture marketplace?</h2>
+          <h2>Isn't this just another online furniture marketplace?</h2>
           <p>
             There are many other great places online to find that G-Plan sideboard,
             those Verner Panton chairs, or that Danish Teak coffee table. So why
@@ -69,7 +69,7 @@ const About = () =>
             is to source these amazing pieces. Because we don't take any commission,
             we don't have to force their sales through our website. We can promote our
             sellers, and allow them to sell the way they want, <i>1 - whether that
-            be through our website, through their own website, or in person! <i>OR </i>
+            be through our website, through their own website, or in person! </i>**OR** <i>
             2 - meaning you can really get to know who you are buying from, and
             find the sellers that *love the stuff you love*</i>
           </p>
@@ -83,14 +83,15 @@ const About = () =>
         <Content>
           <h2>Why sell with us?</h2>
           <p>
-            At Intique, we want buyers to say 'we found it on Intique, we bought
-            it from *your business here*'. This is something that you don't get
-            from sales with our competitors.           
+            At Intique, we want buyers to say "we found it on Intique, we bought
+            it from *your business*", something that you don't get
+            from sales with our commission-based competitors. Here's how we aim
+            to acheive it:
           </p>
           <ul>
-            <li>Personalised boutiques -> put your stamp on your sales</li>
-            <li>No commission</li>
-            <li>Sell your way -> sell through us, promote sales through your website, or organise in-person sales</li>
+            <li>Personalised boutiques - put your stamp on your sales</li>
+            <li>Sell <b><u>your</u></b> way - through us, through your website, or in person</li>
+            <li></li>
           </ul>
         </Content>
       </Row>

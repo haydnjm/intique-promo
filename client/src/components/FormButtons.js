@@ -56,7 +56,7 @@ const FormButtons = (props) =>
       <Mask><h2>Win a ***chair***</h2></Mask>
       <img src='/images/competition.svg' alt="competition"/>
     </FormButton>
-    <FormButton to="/who-are-we">
+    <FormButton to="/about">
       <Mask><h2>What is Intique?</h2></Mask>
       <GlassImg src='/images/logo.svg' alt="about"/>
     </FormButton>

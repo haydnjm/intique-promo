@@ -67,7 +67,7 @@ const DealerInfo = (props) =>
     <div>
       <h2>
         For more information about how Intique works,
-        take a look <StyledLink to="/who-are-we">here!</StyledLink>
+        take a look <StyledLink to="/about">here!</StyledLink>
       </h2>
     </div>
   </Wrapper>;

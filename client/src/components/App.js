@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import styled, { injectGlobal } from 'styled-components';
 
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
 import About from './About';
+import NewAbout from './about/';
 import Footer from './Footer';
+import NotFound from './NotFound';
 
 import Nunito from 'typeface-nunito';
 
@@ -44,12 +46,14 @@ class App extends Component {
       <BrowserRouter>
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
-          <Route exact path="/" component={FormButtons} />
-          <div>
+          <Switch>
+            <Route exact path="/" component={FormButtons} />
             <Route path="/enter-competition" component={ Competition }/>
             <Route path="/dealer-signup" component={ DealerSignup }/>
-            <Route path="/who-are-we" component={ About }/>
-          </div>
+            <Route path="/about" component={ About }/>
+            <Route path="/about-new" component={ NewAbout }/>
+            <Route component={ NotFound } />
+          </Switch>
           <Footer />
         </Container>
       </BrowserRouter>
