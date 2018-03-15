@@ -5,8 +5,7 @@ import styled, { injectGlobal } from 'styled-components';
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
-import About from './About';
-import NewAbout from './about/';
+import About from './about/';
 import Footer from './Footer';
 import NotFound from './NotFound';
 
@@ -51,7 +50,6 @@ class App extends Component {
             <Route path="/enter-competition" component={ Competition }/>
             <Route path="/dealer-signup" component={ DealerSignup }/>
             <Route path="/about" component={ About }/>
-            <Route path="/about-new" component={ NewAbout }/>
             <Route component={ NotFound } />
           </Switch>
           <Footer />

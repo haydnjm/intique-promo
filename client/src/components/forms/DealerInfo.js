@@ -32,7 +32,7 @@ const DealerInfo = (props) =>
   <Wrapper>
     <h1>How the website will work:</h1>
     <Row>
-      <img src='./images/boutiques.svg' />
+      <img src='./images/boutiques.svg' alt="boutiques"/>
       <Content>
         <h3>1. Get your boutique</h3>
         <p>
@@ -43,7 +43,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row reverse>
-      <img src='./images/personal.svg' />
+      <img src='./images/personal.svg' alt="personal"/>
       <Content>
         <h3>2. Fill your boutique with your products, and give it your personal stamp</h3>
         <p>
@@ -54,7 +54,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row>
-      <img src='./images/no-commission.svg' />
+      <img src='./images/no-commission.svg' alt="no commission"/>
       <Content>
         <h3>3. Sell your products on your terms, with no commission</h3>
         <p>
@@ -67,23 +67,9 @@ const DealerInfo = (props) =>
     <div>
       <h2>
         For more information about how Intique works,
-        take a look <StyledLink to="/about">here!</StyledLink>
+        take a look <StyledLink to="/about/what-is-intique">here!</StyledLink>
       </h2>
     </div>
   </Wrapper>;
 
 export default DealerInfo;
-
-/*
-<p>
-  Our aim at Intique is provide a seemless, unobstructed
-    selling experience for our dealers. We do this buy charging a monthly
-    subscription fee. We don't take any commission on your sales and all
-    of your profit goes straight to you, the dealer. This means that we don't
-    need to force sales through our wesbite by hiding your own website or your
-    contact details. Sell your products, sell your brand, keep your profit!
-    Sign up to our dealer list today to get priority access to the website
-    when it is launched, as well as the first 2 months of your subscription for
-    free!
-</p>
-*/

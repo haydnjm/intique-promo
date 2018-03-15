@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 
 import What from './What';
 import Why from './Why';
@@ -12,53 +12,61 @@ import NotFound from '../NotFound';
 const Container = styled.div`
   width: 1000px;
   margin: 50px auto;
-  border: red solid 1px;
 `;
 
 const Tabs = styled.div`
 width: 1000px;
 display: flex;
 margin: auto;
-border: green solid 1px;
 `;
 
-const Tab = styled(Link)`
+const Tab = styled(NavLink)`
   display: flex;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 200px;
-  height: 50px;
+  color: #efff4d;
+  text-decoration: none;
+  background-color: rgba(25,26,28,.5);
 `;
+
+const activeStyle = { backgroundColor: '#48488c' };
 
 const Content = styled(Switch)`
   width: 1000px;
   margin: 0 auto;
-  border: blue solid 1px;
 `;
 
-const ContentPage = styled(Route)`
-
-`;
-
-const NewAbout = () =>
+const About = () =>
   <Container>
     <Tabs>
-      <Tab to="/about-new/what-is-intique">What is Intique?</Tab>
-      <Tab to="/about-new/just-another-marketplace">Isn't this just another online furniture marketplace?</Tab>
-      <Tab to="/about-new/why-sell-with-us">Why sell with us?</Tab>
-      <Tab to="/about-new/why-buy-with-us">Why buy with Intique?</Tab>
-      <Tab to="/about-new/who-are-we">***A bit about-new us?***</Tab>
+      <Tab activeStyle={activeStyle} to="/about/what-is-intique">
+        What is Intique?
+      </Tab>
+      <Tab activeStyle={activeStyle} to="/about/just-another-marketplace">
+        Isn't this just another online furniture marketplace?
+      </Tab>
+      <Tab activeStyle={activeStyle} to="/about/why-sell-with-us">
+        Why sell with us?
+      </Tab>
+      <Tab activeStyle={activeStyle} to="/about/why-buy-with-us">
+        Why buy with Intique?
+      </Tab>
+      <Tab activeStyle={activeStyle} to="/about/who-are-we">
+        A bit about us
+      </Tab>
     </Tabs>
     <Content>
-      <Route exact path="/about-new" component={ What } />
-      <Route path="/about-new/what-is-intique" component={ What } />
-      <Route path="/about-new/just-another-marketplace" component={ Why } />
-      <Route path="/about-new/why-sell-with-us" component={ WhySell } />
-      <Route path="/about-new/why-buy-with-us" component={ WhyBuy } />
-      <Route path="/about-new/who-are-we" component={ Who } />
+      <Route exact path="/about" component={ What } />
+      <Route path="/about/what-is-intique" component={ What } />
+      <Route path="/about/just-another-marketplace" component={ Why } />
+      <Route path="/about/why-sell-with-us" component={ WhySell } />
+      <Route path="/about/why-buy-with-us" component={ WhyBuy } />
+      <Route path="/about/who-are-we" component={ Who } />
       <Route component={ NotFound } />
     </Content>
   </Container>;
 
-export default NewAbout;
+export default About;
