@@ -21,6 +21,15 @@ const FormInput = styled.input`
 
 const FormSelect = FormInput.withComponent('select');
 
+const Row = styled.div`
+  display: flex;
+  margin: auto;
+  height: 30px;
+  width: 90%;
+  color: white;
+  align-items: center;
+`;
+
 const Error = styled.div`
   height: 10px;
   margin: 0 20px;
@@ -51,6 +60,23 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
           </FormSelect>
           <Error>{ touched && error }</Error>
         </div>
+        :
+      type === 'hidden' ?
+      <input
+        { ...input }
+        type={ type }
+      />
+      :
+      type === 'checkbox' ?
+      <div>
+        <Row>
+          <label>{label}</label>
+          <div>
+            <input { ...input } name={ name } type='checkbox' />
+          </div>
+        </Row>
+        <Error>{ touched && error }</Error>
+      </div>
         :
       type === 'hidden' ?
       <input

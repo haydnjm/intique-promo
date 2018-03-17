@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import styled, { injectGlobal } from 'styled-components';
 
+import HomeButton from './HomeButton';
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
@@ -38,6 +39,12 @@ const Banner = styled.img`
   width: 100%;
 `;
 
+const Content = styled.div`
+  position: relative;
+`;
+
+const excudeHome = /\/[^/]+$/;
+
 class App extends Component {
 
   render() {
@@ -45,13 +52,16 @@ class App extends Component {
       <BrowserRouter>
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
-          <Switch>
-            <Route exact path="/" component={FormButtons} />
-            <Route path="/enter-competition" component={ Competition }/>
-            <Route path="/dealer-signup" component={ DealerSignup }/>
-            <Route path="/about" component={ About }/>
-            <Route component={ NotFound } />
-          </Switch>
+          <Content>
+            <Route path="/" component={ HomeButton } />
+            <Switch>
+              <Route exact path="/" component={FormButtons} />
+              <Route path="/enter-competition" component={ Competition }/>
+              <Route path="/dealer-signup" component={ DealerSignup }/>
+              <Route path="/about" component={ About }/>
+              <Route component={ NotFound } />
+            </Switch>
+          </Content>
           <Footer />
         </Container>
       </BrowserRouter>

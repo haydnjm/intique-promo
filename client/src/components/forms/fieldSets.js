@@ -3,6 +3,15 @@ export const COMPETITION_FIELDS = [
   { name: 'lastName', type: 'text', label: 'Last Name', required: false },
   { name: 'email', type: 'email', label: 'Email Address', required: false },
   { name: 'city', type: 'text', label: 'Town/City', required: false },
+  { name: 'gender',
+    type: 'select',
+    label: 'Gender',
+    required: false,
+    selectOptions: [
+      'Male',
+      'Female',
+    ],
+  },
   { name: 'profession',
     type: 'select',
     label: 'Profession',
@@ -48,6 +57,11 @@ export const COMPETITION_FIELDS = [
       '70+ years',
     ],
   },
+  { name: 'previous',
+    type: 'checkbox',
+    label: 'Have you ever bought vintage, antique or mid-century furniture before?',
+    required: false,
+  },
   { name: 'antiSpam', type: 'hidden', label: 'antiSpam', required: false },
 ];
 
@@ -58,7 +72,7 @@ export const DEALER_SIGNUP_FIELDS = [
   { name: 'email', type: 'email', label: 'Email Address', required: true },
   { name: 'city', type: 'text', label: 'Town/City', required: true },
   { name: 'favePlatform',
-    type: 'select', label: 'What\'s your favourite platform to sell on?', required: true,
+    type: 'select', label: 'What\'s your preferred platform to sell on?', required: true,
     selectOptions: [
       'eBay',
       'Etsy',
@@ -66,9 +80,8 @@ export const DEALER_SIGNUP_FIELDS = [
       'Others?',
     ],
   },
-  { name: 'reason', type: 'select', label: 'Why? change to checkboxes?', required: true,
+  { name: 'reason', type: 'select', label: 'What do you like about it?', required: true,
     selectOptions: [
-      'Good user interface',
       'Low effort to maintain',
       'Low costs',
       'Lots of sales',
