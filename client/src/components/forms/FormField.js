@@ -31,7 +31,6 @@ const Row = styled.div`
 `;
 
 const Error = styled.div`
-  height: 10px;
   margin: 0 20px;
   color: #e04c4c;
 `;

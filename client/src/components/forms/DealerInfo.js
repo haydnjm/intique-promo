@@ -7,7 +7,10 @@ const Wrapper = styled.div`
   min-width: 600px;
   margin: 0 auto;
   font-weight: light;
-  //background-color: rgba(40,40,40,.7);
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const Row = styled.div`

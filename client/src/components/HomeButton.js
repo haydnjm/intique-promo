@@ -16,6 +16,11 @@ const Home = styled(Link)`
   &:hover {
     transform: scale(1.2);
   }
+
+  @media (max-width: 700px) {
+    position: static;
+    margin: 10px auto 10px;
+  }
 `;
 
 const HomeButton = () =>

@@ -24,6 +24,7 @@ const Container = styled.div`
   padding-bottom: 150px;
   position: relative;
   width: 100%;
+  overflow: hidden;
   font-family: Nunito;
   min-height: 100vh;
   margin: 0;
@@ -37,13 +38,17 @@ const Container = styled.div`
 const Banner = styled.img`
   margin: 0 0 30px 0;
   width: 100%;
+
+  @media (max-width: 600px) {
+    width: 200%;
+    margin-left: -50%;
+  }
+
 `;
 
 const Content = styled.div`
   position: relative;
 `;
-
-const excudeHome = /\/[^/]+$/;
 
 class App extends Component {
 
@@ -53,7 +58,6 @@ class App extends Component {
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
           <Content>
-            <Route path='/([\S]+)' component={ HomeButton } />
             <Switch>
               <Route exact path="/" component={FormButtons} />
               <Route path="/enter-competition" component={ Competition }/>
@@ -61,6 +65,7 @@ class App extends Component {
               <Route path="/about" component={ About }/>
               <Route component={ NotFound } />
             </Switch>
+            <Route path='/([\S]+)' component={ HomeButton } />
           </Content>
           <Footer />
         </Container>
@@ -68,7 +73,5 @@ class App extends Component {
     );
   };
 }
-
-// export default connect(null, actions)(App);
 
 export default App;

@@ -28,6 +28,16 @@ const FormButton = styled(Link)`
     transform: scale(1.05);
   }
 
+  @media (max-width: 600px) {
+    margin: 50px 10px 50px 10px;
+  }
+
+`;
+
+const FormButtonImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit-cover;
 `;
 
 const Mask = styled.div`
@@ -49,6 +59,9 @@ const Mask = styled.div`
 `;
 
 const GlassImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit-cover;
   background-color: rgba(45,47,49, .5);
 `;
 
@@ -56,7 +69,7 @@ const FormButtons = (props) =>
   <Buttons>
     <FormButton to="/enter-competition">
       <Mask><h3>Love furniture that's a bit different? Win an industrial lamp to brighten up any space!</h3></Mask>
-      <img src='/images/competition.svg' alt="competition"/>
+      <FormButtonImage src='/images/competition.svg' alt="competition"/>
     </FormButton>
     <FormButton to="/about/what-is-intique">
       <Mask><h2>What is Intique?</h2></Mask>
@@ -64,7 +77,7 @@ const FormButtons = (props) =>
     </FormButton>
     <FormButton to="/dealer-signup">
       <Mask><h3>Sign up to become a priority dealer when we launch in July and get 2 months for free!</h3></Mask>
-      <img src='/images/shopfront.svg' alt="dealer signup"/>
+      <FormButtonImage src='/images/shopfront.svg' alt="dealer signup"/>
     </FormButton>
   </Buttons>;
 

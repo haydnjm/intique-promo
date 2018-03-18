@@ -23,6 +23,10 @@ const Form = styled.div`
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
 
   animation: ${floatUp} .3s cubic-bezier(.25,.82,.41,.99);
+
+  @media (max-width: 450px) {
+    width: 80%;
+  }
 `;
 
 const SubmitButton = styled.button`

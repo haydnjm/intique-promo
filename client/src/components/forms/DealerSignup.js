@@ -29,9 +29,9 @@ class DealerSignup extends Component {
 
   render () {
 
-    const description = `We'll be launching the website in June.
-      Try our commission-free market place for 2 months,
-      free of charge by signing up to our priority list now!`;
+    const description = `We'll be launching the website in July.
+      Try our commission-free marketplace for 2 months,
+      free of charge, by signing up to our priority list now!`;
 
     const { handleSubmit, statusMessage } = this.props;
     return (
