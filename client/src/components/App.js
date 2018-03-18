@@ -53,7 +53,7 @@ class App extends Component {
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
           <Content>
-            <Route path="/" component={ HomeButton } />
+            <Route path='/([\S]+)' component={ HomeButton } />
             <Switch>
               <Route exact path="/" component={FormButtons} />
               <Route path="/enter-competition" component={ Competition }/>

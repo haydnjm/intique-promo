@@ -8,7 +8,7 @@ const WhySell = (props) =>
       <ContentText>
         <p>
           At Intique, we want buyers to know where, and who, they have bought the pieces
-          that they love from
+          that they love from.
         </p>
         <p>
           This is something that you don't get from sales with our commission-based

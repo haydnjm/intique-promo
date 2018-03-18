@@ -49,7 +49,7 @@ const About = () =>
         Isn't this just another online furniture marketplace?
       </Tab>
       <Tab activeStyle={activeStyle} to="/about/why-sell-with-us">
-        Why sell with us?
+        Why sell with Intique?
       </Tab>
       <Tab activeStyle={activeStyle} to="/about/why-buy-with-us">
         Why buy with Intique?
