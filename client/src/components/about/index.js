@@ -10,32 +10,39 @@ import Who from './Who';
 import NotFound from '../NotFound';
 
 const Container = styled.div`
-  width: 1000px;
+  width: 95%;
+  max-width: 1000px;
   margin: 50px auto;
 `;
 
 const Tabs = styled.div`
-width: 1000px;
-display: flex;
-margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+
+  @media (min-width: 1250px) {
+    display: flex;
+  }
 `;
 
 const Tab = styled(NavLink)`
+  box-sizing: border-box;
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 200px;
+  width: 100%;
   color: #efff4d;
   text-decoration: none;
   background-color: rgba(25,26,28,.5);
+  border-bottom: 2px solid #48488c;
 `;
 
 const activeStyle = { backgroundColor: '#48488c' };
 
 const Content = styled(Switch)`
-  width: 1000px;
   margin: 0 auto;
 `;
 

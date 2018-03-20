@@ -11,6 +11,10 @@ export const ContentImage = styled.img`
   width: 200px;
   height: 200px;
   margin: 40px 0 40px 0;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
 `;
 
 export const ContentText = styled.div`

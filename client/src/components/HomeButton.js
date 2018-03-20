@@ -17,7 +17,7 @@ const Home = styled(Link)`
     transform: scale(1.2);
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 1250px) {
     position: static;
     margin: 10px auto 10px;
   }
