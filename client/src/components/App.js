@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import styled, { injectGlobal } from 'styled-components';
 
-import HomeButton from './HomeButton';
+import HomeButton from './general/HomeButton';
 import FormButtons from './FormButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';

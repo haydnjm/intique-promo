@@ -2,6 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import { Field } from 'redux-form';
 import FormField from './FormField';
+import FloatingImage from '../general/FloatingImage';
 import styled, { keyframes } from 'styled-components';
 
 const floatUp = keyframes`
@@ -21,7 +22,6 @@ const Form = styled.div`
   padding: 30px;
   background-color: #3b424c;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
-
   animation: ${floatUp} .3s cubic-bezier(.25,.82,.41,.99);
 
   @media (max-width: 450px) {
@@ -55,8 +55,9 @@ const BasicForm = ({
   status,
   onSubmit,
   submit,
-  isLoading,
-  formSubmitted, }) => {
+  formSubmitted,
+  showImage = false,
+  }) => {
 
   const renderFields = () =>
     _.map(fields, ({ name, label, type, selectOptions }) =>
@@ -70,22 +71,21 @@ const BasicForm = ({
       />
     );
 
+  const renderForm = () => <div>
+                      <p>{description}</p>
+                      { showImage ? <FloatingImage src='./images/lamp.jpg' /> : null }
+                      <form onSubmit={ handleSubmit(onSubmit) }>
+                        { renderFields() }
+                        <SubmitButton type="submit">{submit}</SubmitButton>
+                      </form>
+                    </div>;
+
+  const renderStatus = () => <div><h2>{ status }</h2></div>;
+
   return (
     <Form>
-      <p>{description}</p>
-      { !formSubmitted ?
-        <form onSubmit={ handleSubmit(onSubmit) }>
-          { renderFields() }
-          {
-            isLoading ?
-            <span>Loading...</span>
-            :
-            <SubmitButton type="submit">{submit}</SubmitButton>
-          }
-          <div>{ status }</div>
-        </form>
-        :
-        <h3>FORM SUBMITTED</h3>
+      {
+        status ? renderStatus() : renderForm()
       }
     </Form>
   );

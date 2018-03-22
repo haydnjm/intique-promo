@@ -19,10 +19,6 @@ const Container = styled.div`
 
 class DealerSignup extends Component {
 
-  componentWillUnmount() {
-    this.props.clearStatus();
-  };
-
   onSubmit = (values) => {
     this.props.dealerSignup(values);
   };
@@ -33,7 +29,7 @@ class DealerSignup extends Component {
       Try our commission-free marketplace for 2 months,
       free of charge, by signing up to our priority list now!`;
 
-    const { handleSubmit, statusMessage } = this.props;
+    const { handleSubmit, signupState } = this.props;
     return (
       <Container>
         <DealerInfo />
@@ -43,14 +39,16 @@ class DealerSignup extends Component {
           handleSubmit={handleSubmit}
           onSubmit={this.onSubmit}
           submit={'Sign up'}
-          status={statusMessage}
+          status={ signupState }
         />
       </Container>
     );
   }
 };
 
-const mapStateToProps = ({ status }) => ({ statusMessage: status });
+const mapStateToProps = ({ signupState }) => {
+  return { signupState };
+};
 
 export default connect(mapStateToProps, actions)(reduxForm({
   validate,

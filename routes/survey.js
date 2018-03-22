@@ -9,10 +9,8 @@ module.exports = app => {
     const existingEntry = await CompetitionEntry.findOne({ email: email });
 
     if (existingEntry) {
-      console.log('already created', existingEntry.email);
       res.status(422).send("You've already entered!");
     } else {
-      console.log('not created');
       const newEntry = new CompetitionEntry({
         firstName, lastName, email, city, profession, age,
       }).save()

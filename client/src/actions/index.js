@@ -4,24 +4,40 @@ import axios from 'axios';
 import {
   CREATE_STATUS,
   CLEAR_STATUS,
+  COMP_SUCCESS,
+  COMP_FAIL,
+  SIGNUP_SUCCESS,
+  SIGNUP_FAIL,
 } from './types';
+
+/*
+*
+* Form actions
+* - Alter state of form to address if form has been submitted
+*/
 
 export const competitionEntry = (formData) =>
   async dispatch => {
     axios.post('/api/competition-entry', formData)
-      .then(res => dispatch({ type: CREATE_STATUS, payload: res.data }))
+      .then(res => {
+        dispatch({ type: COMP_SUCCESS, payload: res.data });
+      })
       .catch(({ response }) => {
-        console.log(response);
-        dispatch({ type: CREATE_STATUS, payload: response.data });
+        dispatch({ type: COMP_FAIL, payload: response.data });
       });
   };
 
 export const dealerSignup = (formData) =>
   async dispatch => {
     axios.post('/api/dealer-signup', formData)
-      .then(res => dispatch({ type: CREATE_STATUS, payload: res.data }))
-      .catch(({ response }) =>
-        dispatch({ type: CREATE_STATUS, payload: response.data }));
+      .then(res => {
+        console.log(res);
+        dispatch({ type: SIGNUP_SUCCESS, payload: res.data });
+      })
+      .catch(({ response }) => {
+        console.log(response);
+        dispatch({ type: SIGNUP_FAIL, payload: response.data });
+      });
   };
 
 /*
