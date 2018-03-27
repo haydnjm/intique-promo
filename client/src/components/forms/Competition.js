@@ -15,6 +15,16 @@ const LampLink = styled.span`
   color: white;
   display: inline-block;
   margin: 0;
+
+  &hover {
+    cursor: pointer;
+  }
+`;
+
+const Banner = styled.img`
+  display: block;
+  width: 90%;
+  margin: 0 auto 35px;
 `;
 
 class Competition extends Component {
@@ -39,6 +49,7 @@ class Competition extends Component {
 
     const description =
       [
+        <Banner src='./images/banner.svg' />,
         `Brighten up your home with `,
         <LampLink
           key='lamp'
