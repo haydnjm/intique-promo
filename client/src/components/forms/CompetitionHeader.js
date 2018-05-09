@@ -5,6 +5,17 @@ const Container = styled.div`
   width: 450px;
 `;
 
+const Anchor = styled.a`
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:visited {
+    color: white;
+  }
+`;
+
 const LampLink = styled.span`
   text-decoration: underline;
   color: white;
@@ -33,19 +44,13 @@ const CompetitionHeader = ({ showLamp, hideLamp }) =>
 <div>
   <Banner src='./images/banner.svg' />
   <Description>
-    Brighten up your home with&nbsp;
-    <LampLink
-      onMouseOver={showLamp}
-      onMouseLeave={hideLamp}
-      >
-      this green enamel industrial lamp
-    </LampLink>
-    worth over £150! For your chance to win just enter your details below
-    and you'll be entered into the prize draw. We'll send you an email to
-    let you know when we'll be drawing the winning ticket and again if you
-    are the lucky winner of our prize! (We'll also pay for postage, so you've
-    got nothing to lose!)
+    Enter your details below and like
+    our <Anchor target='_blank' href='https://www.facebook.com/intiqueuk/'>Facebook page</Anchor> for
+    your chance to win one of our three prizes. If you are
+    our lucky winner you can choose the piece that you think would bring the
+    most to your interior - and we'll even pay for shipping*, so there's nothing to lose!
   </Description>
+  <Description><sub>*within the UK</sub></Description>
 </div>;
 
 export default CompetitionHeader;

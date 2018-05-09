@@ -26,8 +26,9 @@ class DealerSignup extends Component {
   render () {
 
     const description = `We'll be launching the website in July.
-      Try our commission-free marketplace for 2 months,
-      free of charge, by signing up to our priority list now!`;
+      Try our commission-free marketplace for 2 months, and get all
+      of your initial listings done for you
+      free of charge, by signing up to our priority seller list now!`;
 
     const { handleSubmit, signupState } = this.props;
     return (

@@ -65,10 +65,11 @@ const GlassImg = styled.img`
   background-color: rgba(45,47,49, .5);
 `;
 
+
 const FormButtons = (props) =>
   <Buttons>
     <FormButton to="/enter-competition">
-      <Mask><h3>Love furniture that's a bit different? Win an industrial lamp to brighten up any space!</h3></Mask>
+      <Mask><h3>Enter our competition for your chance to win the next stylish addition to your home!</h3></Mask>
       <FormButtonImage src='/images/competition.svg' alt="competition"/>
     </FormButton>
     <FormButton to="/about/what-is-intique">
@@ -76,7 +77,7 @@ const FormButtons = (props) =>
       <GlassImg src='/images/logo.svg' alt="about"/>
     </FormButton>
     <FormButton to="/dealer-signup">
-      <Mask><h3>Sign up to become a priority dealer when we launch in July and get 2 months for free!</h3></Mask>
+      <Mask><h3>Sign up now to sell with us when we launch in September, and get 2 months free subscription!</h3></Mask>
       <FormButtonImage src='/images/shopfront.svg' alt="dealer signup"/>
     </FormButton>
   </Buttons>;

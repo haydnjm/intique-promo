@@ -57,6 +57,7 @@ class App extends Component {
       <BrowserRouter>
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
+          <h2>Motto here</h2>
           <Content>
             <Switch>
               <Route exact path="/" component={FormButtons} />

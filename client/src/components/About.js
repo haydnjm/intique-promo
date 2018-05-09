@@ -29,10 +29,6 @@ const Column = styled.div`
   min-width: 500px;
 `;
 
-const InfoGraph = styled.img`
-
-`;
-
 const About = () =>
   <Container>
     <Column>
