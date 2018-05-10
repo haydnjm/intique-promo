@@ -10,33 +10,43 @@ const PrizesContainer = styled.div`
   flex: 1 1 0;
   justify-content: center;
   min-width: 450px;
+  font-size: 0.92em;
 `;
 
 const prizes = [
   {
     image: '/images/chair1.jpg',
     alt: 'chair prize',
-    title: 'Vitra Chair',
+    title: 'Verner Panaton C1',
     description: `
-      This is a vitra chair it is grey and round this is a
-      description of the chair it was made by vitra and is good for these reasons.
-      The chair would go great into setting one or maybe setting two. 42 words.
+      Manufactured by Vitra, dating to the 1950’s/60’s, the chair’s elegant
+      base is influenced by Scandinavian Modernism, yet the spherical bucket
+      seat has an exciting Pop Art vibe. Working superbly in any interior, the
+      C1 offers itself as an unrivalled accent chair.
     `,
-    dimensions: '12cm x 34cm x 56cm',
+    dimensions: 'H: 73.5cm, W: 44cm',
   },
   {
     image: '/images/lamp1.jpg',
     title: 'Bespoke Industrial Lamp',
     description: `
+      An original 1940’s industrial machinists desk lamp, which has been
+      re-worked ready for its new owner. Its vibrant green enamel shade
+      compliments the masculine H bar steel base. Perfect as a desk, bedside
+      or sideboard lamp, this is sure to brighten up any space!
     `,
-    dimensions: '12cm x 34cm x 56cm',
+    dimensions: 'Max height – 91cm',
   },
   {
     image: '/images/table1.jpg',
     title: 'Danish Teak Coffee Table',
     description: `
+      1960’s Teak coffee table. With a circular top and cross shaped base,
+      this table is true to Scandinavian design. It’s versatility, style and
+      simplicity makes it a piece that can easily enhance a wide range of living
+      room spaces.
     `,
-    dimensions: '12cm x 34cm x 56cm',
+    dimensions: 'H: 41.5cm, Dia: 76cm',
   },
 ];
 

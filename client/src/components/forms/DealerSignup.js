@@ -14,14 +14,11 @@ const validate = dealerSignup;
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 `;
 
 class DealerSignup extends Component {
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
 
   onSubmit = (values) => {
     this.props.dealerSignup(values);
@@ -45,6 +42,7 @@ class DealerSignup extends Component {
           onSubmit={this.onSubmit}
           submit={'Sign up'}
           status={ signupState }
+          title={'GET 2 MONTHS FREE'}
         />
       </Container>
     );

@@ -3,39 +3,63 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
-  width: 40%;
-  min-width: 600px;
-  margin: 0 auto;
-  font-weight: light;
+  flex: 1.5 1 0
+  min-width: 300px;
 
-  @media (max-width: 1100px) {
-    display: none;
-  }
+  width: 90%;
+  max-width: 750px;
+
 `;
 
 const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: ${props => props.reverse ? 'row-reverse' : 'row'};
   text-align: ${props => props.reverse ? 'right' : 'left'};
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 650px;
 `;
 
 const Content = styled.div`
   display: flex;
+  min-width: 275px;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  max-width: 60%;
+
+  @media (max-width: 650px) {
+    text-align: center;
+    max-width: 100%;
+  }
 `;
 
 const StyledLink = styled(Link)`
   color: white;
 `;
 
+const InfoImg = styled.img`
+  margin: auto;
+  width 150px;
+  height: 150px;
+`;
+
+const H1 = styled.h1`
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+`;
+const H2 = styled.h1`
+  margin: 0 auto 30px;
+  max-width: 650px;
+  text-align: center;
+`;
+
 const DealerInfo = (props) =>
   <Wrapper>
-    <h1>How the website will work:</h1>
+    <H1>How the website will work:</H1>
     <Row>
-      <img src='./images/boutiques.svg' alt="boutiques"/>
+      <InfoImg src='./images/boutiques.svg' alt="boutiques"/>
       <Content>
         <h3>1. Get your boutique</h3>
         <p>
@@ -46,7 +70,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row reverse>
-      <img src='./images/personal.svg' alt="personal"/>
+      <InfoImg src='./images/personal.svg' alt="personal"/>
       <Content>
         <h3>2. Fill your boutique with your products, and give it your personal stamp</h3>
         <p>
@@ -57,7 +81,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row>
-      <img src='./images/no-commission.svg' alt="no commission"/>
+      <InfoImg src='./images/no-commission.svg' alt="no commission"/>
       <Content>
         <h3>3. Sell your products on your terms, with no commission</h3>
         <p>
@@ -68,10 +92,10 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <div>
-      <h2>
+      <H2>
         For more information about how Intique works,
         take a look <StyledLink to="/about/what-is-intique">here!</StyledLink>
-      </h2>
+    </H2>
     </div>
   </Wrapper>;
 

@@ -61,6 +61,7 @@ const BasicForm = ({
   submit,
   formSubmitted,
   showImage = false,
+  title,
   }) => {
 
   const renderFields = () =>
@@ -77,6 +78,7 @@ const BasicForm = ({
 
   const renderForm = () =>
     <div>
+      { title && <h3>{ title }</h3> }
       <p>{description}</p>
       <form onSubmit={ handleSubmit(onSubmit) }>
         { renderFields() }

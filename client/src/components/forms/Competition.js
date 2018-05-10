@@ -20,10 +20,6 @@ const Columns = styled.div`
 
 class Competition extends Component {
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
   onSubmit = (values) => {
     this.props.competitionEntry(values);
   };

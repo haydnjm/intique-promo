@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import FontAwesome from 'react-fontawesome';
 
 const Tile = styled.div`
   width: 250px;
@@ -32,8 +33,18 @@ const Mask = styled.div`
   }
 `;
 
+const Info = styled.div`
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+`;
+
 const PrizeTile = ({ image, title, alt, description, dimensions }) =>
   <Tile>
+    <Info><FontAwesome name='info-circle'/></Info>
     <Mask>
       <h3>{title}</h3>
       {description}

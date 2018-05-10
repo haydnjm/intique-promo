@@ -59,7 +59,7 @@ class App extends Component {
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
           <Content>
             <Switch>
-              <Route exact path="/" component={HomeButtons} />
+              <Route exact path="/" component={ HomeButtons } />
               <Route path="/enter-competition" component={ Competition }/>
               <Route path="/dealer-signup" component={ DealerSignup }/>
               <Route path="/about" component={ About }/>
