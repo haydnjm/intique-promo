@@ -19,6 +19,10 @@ const Container = styled.div`
 
 class DealerSignup extends Component {
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   onSubmit = (values) => {
     this.props.dealerSignup(values);
   };

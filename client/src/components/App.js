@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import styled, { injectGlobal } from 'styled-components';
 
 import HomeButton from './general/HomeButton';
-import FormButtons from './FormButtons';
+import HomeButtons from './HomeButtons';
 import Competition from './forms/Competition';
 import DealerSignup from './forms/DealerSignup';
 import About from './about/';
@@ -57,10 +57,9 @@ class App extends Component {
       <BrowserRouter>
         <Container>
           <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
-          <h2>Motto here</h2>
           <Content>
             <Switch>
-              <Route exact path="/" component={FormButtons} />
+              <Route exact path="/" component={HomeButtons} />
               <Route path="/enter-competition" component={ Competition }/>
               <Route path="/dealer-signup" component={ DealerSignup }/>
               <Route path="/about" component={ About }/>

@@ -11,7 +11,8 @@ const Why = () =>
           table. So why come to us?
         </p>
         <p>
-          We're all about promoting the independent businesses whose passion it
+          One of the main reasons we started Intique was so that we could
+          promote the independent businesses whose passion it
           is to source these amazing pieces. Because we don't take any commission,
           we can encourage sellers to sell however they want.
         </p>

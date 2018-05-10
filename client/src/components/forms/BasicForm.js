@@ -15,6 +15,10 @@ const floatUp = keyframes`
   }
 `;
 
+const FlexContainer = styled.div`
+  flex: 1 1 0;
+`;
+
 const Form = styled.div`
   width: 450px;
   margin: auto;
@@ -71,23 +75,25 @@ const BasicForm = ({
       />
     );
 
-  const renderForm = () => <div>
-                      <p>{description}</p>
-                      { showImage ? <FloatingImage src='./images/lamp.jpg' /> : null }
-                      <form onSubmit={ handleSubmit(onSubmit) }>
-                        { renderFields() }
-                        <SubmitButton type="submit">{submit}</SubmitButton>
-                      </form>
-                    </div>;
+  const renderForm = () =>
+    <div>
+      <p>{description}</p>
+      <form onSubmit={ handleSubmit(onSubmit) }>
+        { renderFields() }
+        <SubmitButton type="submit">{submit}</SubmitButton>
+      </form>
+    </div>;
 
   const renderStatus = () => <div><h2>{ status }</h2></div>;
 
   return (
-    <Form>
-      {
-        status ? renderStatus() : renderForm()
-      }
-    </Form>
+    <FlexContainer>
+      <Form>
+        {
+          status ? renderStatus() : renderForm()
+        }
+      </Form>
+    </FlexContainer>
   );
 };
 

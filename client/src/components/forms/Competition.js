@@ -2,31 +2,30 @@ import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
+import styled from 'styled-components';
 
 import { COMPETITION_FIELDS } from './fieldSets';
 import { compEntry } from './validation';
 import BasicForm from './BasicForm';
-import CompetitionHeader from './CompetitionHeader';
-import styled from 'styled-components';
+import CompetitionHeader from '../competition/CompetitionHeader';
+import Prizes from '../competition/Prizes';
 
 const validate = compEntry;
 
+const Columns = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
 class Competition extends Component {
 
-  state = {
-    showImage: false,
-  };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   onSubmit = (values) => {
     this.props.competitionEntry(values);
-  };
-
-  showLamp = () => {
-    this.setState({ showImage: true });
-  };
-
-  hideLamp = () => {
-    this.setState({ showImage: false });
   };
 
   render () {
@@ -34,25 +33,22 @@ class Competition extends Component {
     const { handleSubmit, compState } = this.props;
 
     return <div>
-              <CompetitionHeader
-                showLamp={() => this.showLamp()}
-                hideLamp={() => this.hideLamp()}
-              />
-              <BasicForm
-                 fields={COMPETITION_FIELDS}
-                 handleSubmit={handleSubmit}
-                 onSubmit={this.onSubmit}
-                 submit={'Enter!'}
-                 status={ compState }
-                 showImage={this.state.showImage}
-               />
+              <CompetitionHeader  />
+              <Columns>
+                <Prizes />
+                <BasicForm
+                   fields={COMPETITION_FIELDS}
+                   handleSubmit={handleSubmit}
+                   onSubmit={this.onSubmit}
+                   submit={'Enter!'}
+                   status={ compState }
+                 />
+             </Columns>
            </div>;
   }
 };
 
-const mapStateToProps = ({ compState }) => {
-  return { compState };
-};
+const mapStateToProps = ({ compState }) => ({ compState });
 
 export default connect(mapStateToProps, actions)(reduxForm({
   validate,
