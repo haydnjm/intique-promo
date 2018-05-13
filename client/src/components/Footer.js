@@ -41,6 +41,10 @@ const A = styled.a`
 
   transition: all 0.2s ease-in-out;
 
+  &:link {
+    color: #252628;
+  }
+
   &:visited {
     color: #252628;
   }
