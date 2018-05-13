@@ -26,10 +26,9 @@ class DealerSignup extends Component {
 
   render () {
 
-    const description = `We'll be launching the website in July.
-      Try our commission-free marketplace for 2 months, and get all
-      of your initial listings done for you
-      free of charge, by signing up to our priority seller list now!`;
+    const description = `We'll be launching the website in September.
+      Sign up to sell with us today for when we launch, and recieve the first two months of your
+      subscription for free!`;
 
     const { handleSubmit, signupState } = this.props;
     return (
@@ -42,16 +41,14 @@ class DealerSignup extends Component {
           onSubmit={this.onSubmit}
           submit={'Sign up'}
           status={ signupState }
-          title={'GET 2 MONTHS FREE'}
+          title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
         />
       </Container>
     );
   }
 };
 
-const mapStateToProps = ({ signupState }) => {
-  return { signupState };
-};
+const mapStateToProps = ({ signupState }) => ({ signupState });
 
 export default connect(mapStateToProps, actions)(reduxForm({
   validate,

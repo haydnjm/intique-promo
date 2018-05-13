@@ -41,10 +41,26 @@ const Info = styled.div`
   height: 30px;
   font-size: 1.5rem;
 `;
+const Number = styled.div`
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #efff4d;
+  color: #252628;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-const PrizeTile = ({ image, title, alt, description, dimensions }) =>
+const PrizeTile = ({ image, title, alt, description, dimensions, number }) =>
   <Tile>
     <Info><FontAwesome name='info-circle'/></Info>
+    <Number>{number}</Number>
     <Mask>
       <h3>{title}</h3>
       {description}

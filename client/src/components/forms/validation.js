@@ -36,6 +36,10 @@ export const compEntry = (values) => {
     errors.age = 'Please select an age range!';
   }
 
+  if (values.prize === 'Which prize would you like to enter to win?' || !values.prize) {
+    errors.prize = `Choose the prize you're entering to win! (The prize numbers are in the bottom left corner of the prize images)`;
+  }
+
   if (values.antiSpam) {
     errors.antiSpam = 'No bots';
   }
@@ -67,7 +71,9 @@ export const dealerSignup = (values) => {
   }
 
   if (values.listingValue === 'How much would you like to list?' || !values.listingValue) {
-    errors.listingValue = 'Please enter roughly how much stock you\'d want to list on the website';
+    errors.listingValue = `Please choose your subscription tier. After you sign up we will get
+                           in contact to help you set up your boutique, so you can always change
+                           your mind about this!`;
   }
 
   if (values.averagePrice === 'What\'s the average price of your items?' || !values.averagePrice) {

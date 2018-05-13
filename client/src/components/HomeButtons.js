@@ -71,7 +71,6 @@ const HomeButtons = (props) => {
   const scrollToTop = () => window.scrollTo(0, 0);
 
   return <div>
-    <h2>Motto here</h2>
     <Buttons>
       <FormButton to="/enter-competition">
         <Mask onClick={scrollToTop}>
@@ -92,7 +91,7 @@ const HomeButtons = (props) => {
       <FormButton to="/dealer-signup">
         <Mask onClick={scrollToTop}>
           <h3>
-            Sign up now to sell with us when we launch in September, and get 2 months free subscription!
+            Sign up now to sell with Intique for when we launch in September, and get 2 months free subscription!
           </h3>
         </Mask>
         <FormButtonImage src='/images/shopfront.svg' alt="dealer signup"/>

@@ -64,7 +64,7 @@ const DealerInfo = (props) =>
         <h3>1. Get your boutique</h3>
         <p>
           Rent a boutique that's the right size for your business. With a fixed
-          monthly fee you know exactly where you stand each month, and you can scale
+          monthly subscription you know exactly where you stand each month, and you can scale
           your boutique up as your inventory grows.
         </p>
       </Content>

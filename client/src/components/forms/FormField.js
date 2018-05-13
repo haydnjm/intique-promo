@@ -19,6 +19,11 @@ const FormInput = styled.input`
   background-color: #3b424c;
 `;
 
+const Label = styled.label`
+  display: flex;
+  align-items: center;
+`;
+
 const FormSelect = FormInput.withComponent('select');
 
 const Row = styled.div`
@@ -69,10 +74,10 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
       type === 'checkbox' ?
       <div>
         <Row>
-          <label>{label}</label>
-          <div>
+          <Label>
+            <span>{label}</span>
             <input { ...input } name={ name } type='checkbox' />
-          </div>
+          </Label>
         </Row>
         <Error>{ touched && error }</Error>
       </div>

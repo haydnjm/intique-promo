@@ -24,22 +24,24 @@ const prizes = [
       seat has an exciting Pop Art vibe. Working superbly in any interior, the
       C1 offers itself as an unrivalled accent chair.
     `,
-    dimensions: 'H: 73.5cm, W: 44cm',
+    dimensions: 'H: 73.5cm, W: 66cm',
+    number: '1',
   },
   {
     image: '/images/lamp1.jpg',
-    title: 'Bespoke Industrial Lamp',
+    title: `1940's Machinist Lamp`,
     description: `
       An original 1940’s industrial machinists desk lamp, which has been
-      re-worked ready for its new owner. Its vibrant green enamel shade
+      restored ready for its new owner. Its vibrant green enamel shade
       compliments the masculine H bar steel base. Perfect as a desk, bedside
       or sideboard lamp, this is sure to brighten up any space!
     `,
     dimensions: 'Max height – 91cm',
+    number: '2',
   },
   {
     image: '/images/table1.jpg',
-    title: 'Danish Teak Coffee Table',
+    title: `1960's Teak Coffee Table`,
     description: `
       1960’s Teak coffee table. With a circular top and cross shaped base,
       this table is true to Scandinavian design. It’s versatility, style and
@@ -47,6 +49,7 @@ const prizes = [
       room spaces.
     `,
     dimensions: 'H: 41.5cm, Dia: 76cm',
+    number: '3',
   },
 ];
 
@@ -61,6 +64,7 @@ const Prizes = () =>
           alt={prize.alt}
           description={prize.description}
           dimensions={prize.dimensions}
+          number={prize.number}
           />)
     }
   </PrizesContainer>;

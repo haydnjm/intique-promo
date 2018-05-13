@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 
 const FooterDiv = styled.div`
   height: 120px;
@@ -11,6 +12,24 @@ const FooterDiv = styled.div`
   bottom: 0;
   left: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+const ContentWrapper = styled.div`
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+`;
+
+const IconWrapper = styled.div`
+  font-size: 3rem;
+  width: 30px;
+  color: #252628;
 `;
 
 const FooterImg = styled.img`
@@ -18,9 +37,34 @@ const FooterImg = styled.img`
   margin-top: 10px;
 `;
 
+const A = styled.a`
+
+  transition: all 0.2s ease-in-out;
+
+  &:visited {
+    color: #252628;
+  }
+  &:hover {
+    color: #efff4d;
+  }
+
+`;
+
 const Footer = () =>
   <FooterDiv>
-    <Link to="/"><FooterImg src="/images/logo.svg" alt="logo"/></Link>
+    <ContentWrapper>
+      <IconWrapper>
+        <A target='_blank' href='https://www.instagram.com/intique_uk/'>
+          <FontAwesome name='instagram' />
+        </A>
+      </IconWrapper>
+      <Link to="/"><FooterImg src="/images/logo.svg" alt="logo"/></Link>
+      <IconWrapper>
+        <A target='_blank' href='https://www.facebook.com/intiqueuk/'>
+          <FontAwesome name='facebook' />
+        </A>
+      </IconWrapper>
+    </ContentWrapper>
   </FooterDiv>;
 
 export default Footer;

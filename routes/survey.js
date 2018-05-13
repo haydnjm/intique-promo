@@ -5,11 +5,24 @@ module.exports = app => {
 
   app.post('/api/competition-entry', async (req, res, next) => {
 
-    const { firstName, lastName, email, city, profession, age } = req.body;
+    const {
+      firstName,
+      lastName,
+      email,
+      city,
+      gender,
+      profession,
+      age,
+      previous = false,
+      prize,
+     } = req.body;
     const existingEntry = await CompetitionEntry.findOne({ email: email });
 
     if (existingEntry) {
-      res.status(422).send("You've already entered!");
+      res.status(422).send(`
+        You've already entered! Make sure you've liked our Facebook page so
+        that you'll know if you are our lucky winner!
+      `);
     } else {
       const newEntry = new CompetitionEntry({
         firstName, lastName, email, city, profession, age,
