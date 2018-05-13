@@ -19,6 +19,7 @@ const Image = styled.img`
 
 const Mask = styled.div`
   box-sizing: border-box;
+  border-radius: 10px;
   width: 250px;
   height: 250px;
   position: absolute;

@@ -25,7 +25,7 @@ module.exports = app => {
       `);
     } else {
       const newEntry = new CompetitionEntry({
-        firstName, lastName, email, city, profession, age,
+        firstName, lastName, email, city, profession, age, previous,
       }).save()
         .then(entry => {
           res.send('entry saved');
