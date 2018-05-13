@@ -34,7 +34,7 @@ const Tab = styled(NavLink)`
   justify-content: center;
   text-align: center;
   width: 100%;
-  color: #efff4d;
+  color: #e8da77;
   text-decoration: none;
   background-color: rgba(25,26,28,.5);
   border-bottom: 2px solid #48488c;
