@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 450px;
+  width: 95%;
+  max-width: 450px;
 `;
 
 const Anchor = styled.a`
