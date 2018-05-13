@@ -56,7 +56,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Container>
-          <Link to="/"><Banner src="/images/paler/banner1.svg" alt="banner" /></Link>
+          <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
           <Content>
             <Switch>
               <Route exact path="/" component={ HomeButtons } />
