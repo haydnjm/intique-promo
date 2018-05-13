@@ -36,7 +36,9 @@ const Banner = styled.img`
 `;
 
 const Panel =  styled.div`
-width: 450px;
+box-sizing: border-box;
+width: 95%;
+max-width: 450px;
 margin: auto;
 border-radius: 10px;
 background-color: #3b424c;
