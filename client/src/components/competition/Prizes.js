@@ -17,7 +17,7 @@ const prizes = [
   {
     image: '/images/chair1.jpg',
     alt: 'chair prize',
-    title: 'Verner Panaton C1',
+    title: 'Verner Panton C1',
     description: `
       Manufactured by Vitra, dating to the 1950’s/60’s, the chair’s elegant
       base is influenced by Scandinavian Modernism, yet the spherical bucket
