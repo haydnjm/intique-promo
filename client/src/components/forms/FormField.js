@@ -12,20 +12,22 @@ const FormInput = styled.input`
   display: block;
   margin: auto;
   height: 30px;
-  width: 90%;
+  width: 95%;
   border: none;
   border-bottom: 1px solid #999;
   color: #ddd;
   background-color: #3b424c;
+`;
 
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+const CheckLabel = styled.label`
+  display: flex;
+  align-items: center;
 `;
 
 const Label = styled.label`
-  display: flex;
-  align-items: center;
+  display: block;
+  width: 95%;
+  margin: auto;
 `;
 
 const FormSelect = FormInput.withComponent('select');
@@ -60,8 +62,8 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
       :
       type === 'select' ?
         <div>
+          <Label>{ label }</Label>
           <FormSelect { ...input } name={ name } type='select'>
-            <option value={ name }>{ label }</option>
             { _.map(selectOptions, (value, key) => {
               return <option value={ value } key={ value }>{ value }</option>;
             })}
@@ -78,10 +80,10 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
       type === 'checkbox' ?
       <div>
         <Row>
-          <Label>
+          <CheckLabel>
             <span>{label}</span>
             <input { ...input } name={ name } type='checkbox' />
-          </Label>
+          </CheckLabel>
         </Row>
         <Error>{ touched && error }</Error>
       </div>
