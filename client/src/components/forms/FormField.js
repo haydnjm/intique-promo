@@ -17,6 +17,10 @@ const FormInput = styled.input`
   border-bottom: 1px solid #999;
   color: #ddd;
   background-color: #3b424c;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 const Label = styled.label`
