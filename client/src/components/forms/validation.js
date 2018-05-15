@@ -37,7 +37,7 @@ export const compEntry = (values) => {
   }
 
   if (values.prize === 'Select' || !values.prize) {
-    errors.prize = `Choose the prize you're entering to win! (The prize numbers are in the bottom left corner of the prize images)`;
+    errors.prize = `Choose the prize you're entering to win!`;
   }
 
   if (values.antiSpam) {

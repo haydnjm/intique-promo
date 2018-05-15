@@ -70,7 +70,7 @@ export const COMPETITION_FIELDS = [
     type: 'select',
     label: 'Which prize would you like to enter to win?',
     selectOptions: [
-      'Select', '1', '2', '3',
+      'Select', '1 - Vitra Chair', '2 - Mechanist Lamp', '3 - Teak Table',
     ],
   },
   { name: 'antiSpam', type: 'hidden', label: 'antiSpam', required: false },
