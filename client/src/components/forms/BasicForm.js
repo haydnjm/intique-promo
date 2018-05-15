@@ -19,11 +19,15 @@ const FlexContainer = styled.div`
   flex: 1 1 0;
 `;
 
+const FormHeader = styled.div`
+  padding: 0 20px 0;
+`;
+
 const Form = styled.div`
   width: 450px;
   margin: auto;
   border-radius: 10px;
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
   background-color: #3b424c;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
   animation: ${floatUp} .3s cubic-bezier(.25,.82,.41,.99);
@@ -78,8 +82,10 @@ const BasicForm = ({
 
   const renderForm = () =>
     <div>
-      { title && <h3>{ title }</h3> }
-      <p>{description}</p>
+      <FormHeader>
+        { title && <h3>{ title }</h3> }
+        <p>{description}</p>
+      </FormHeader>
       <form onSubmit={ handleSubmit(onSubmit) }>
         { renderFields() }
         <SubmitButton type="submit">{submit}</SubmitButton>

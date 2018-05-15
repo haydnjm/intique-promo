@@ -28,7 +28,7 @@ export const compEntry = (values) => {
     errors.email = 'Invalid email address';
   }
 
-  if (values.profession === 'Profession' || !values.profession) {
+  if (values.profession === 'Select' || !values.profession) {
     errors.profession = 'Please select a profession!';
   }
 
@@ -36,7 +36,7 @@ export const compEntry = (values) => {
     errors.age = 'Please select an age range!';
   }
 
-  if (values.prize === 'Which prize would you like to enter to win?' || !values.prize) {
+  if (values.prize === 'Select' || !values.prize) {
     errors.prize = `Choose the prize you're entering to win! (The prize numbers are in the bottom left corner of the prize images)`;
   }
 
@@ -62,25 +62,25 @@ export const dealerSignup = (values) => {
     errors.city = 'Please enter the city that your busness operates from!';
   }
 
-  if (values.favePlatform === 'What\'s your favourite platform to sell on?' || !values.favePlatform) {
+  if (values.favePlatform === 'Select' || !values.favePlatform) {
     errors.favePlatform = 'Please enter your favourite selling platform!';
   }
 
-  if (values.reason === 'Why? change to checkboxes?' || !values.reason) {
+  if (values.reason === 'Select' || !values.reason) {
     errors.reason = 'Why do you like that playform?';
   }
 
-  if (values.listingValue === 'How much would you like to list?' || !values.listingValue) {
+  if (values.listingValue === 'Select' || !values.listingValue) {
     errors.listingValue = `Please choose your subscription tier. After you sign up we will get
                            in contact to help you set up your boutique, so you can always change
                            your mind about this!`;
   }
 
-  if (values.averagePrice === 'What\'s the average price of your items?' || !values.averagePrice) {
+  if (values.averagePrice === 'Select' || !values.averagePrice) {
     errors.averagePrice = 'Please enter the approximate average price of the items you\'d like to list';
   }
 
-  if (values.shopfront === 'Would you like a personalised shopfront?' || !values.shopfront) {
+  if (values.shopfront === 'Select' || !values.shopfront) {
     errors.shopfront = 'Please enter if you\'d like to have a personalised boutique within the website';
   }
 

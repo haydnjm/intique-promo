@@ -8,11 +8,15 @@ const FormFieldContainer = styled.div`
   margin: 20px;
 `;
 
+const Wrapper = styled.div`
+  margin-bottom: 15px;
+`;
+
 const FormInput = styled.input`
   display: block;
   margin: auto;
   height: 30px;
-  width: 95%;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #999;
   color: #ddd;
@@ -26,7 +30,7 @@ const CheckLabel = styled.label`
 
 const Label = styled.label`
   display: block;
-  width: 95%;
+  width: 100%;
   margin: auto;
 `;
 
@@ -34,7 +38,7 @@ const FormSelect = FormInput.withComponent('select');
 
 const Row = styled.div`
   display: flex;
-  margin: auto;
+  margin: 0;
   height: 30px;
   width: 90%;
   color: white;
@@ -50,7 +54,7 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
 
   <FormFieldContainer>
     { type === 'text' || type === 'email' ?
-      <div>
+      <Wrapper>
         <FormInput
           { ...input }
           name={ name }
@@ -58,10 +62,10 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
           placeholder={ label }
         />
         <Error>{ touched && error }</Error>
-      </div>
+      </Wrapper>
       :
       type === 'select' ?
-        <div>
+        <Wrapper>
           <Label>{ label }</Label>
           <FormSelect { ...input } name={ name } type='select'>
             { _.map(selectOptions, (value, key) => {
@@ -69,7 +73,7 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
             })}
           </FormSelect>
           <Error>{ touched && error }</Error>
-        </div>
+        </Wrapper>
         :
       type === 'hidden' ?
       <input
@@ -78,7 +82,7 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
       />
       :
       type === 'checkbox' ?
-      <div>
+      <Wrapper>
         <Row>
           <CheckLabel>
             <span>{label}</span>
@@ -86,7 +90,7 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
           </CheckLabel>
         </Row>
         <Error>{ touched && error }</Error>
-      </div>
+      </Wrapper>
         :
       type === 'hidden' ?
       <input
