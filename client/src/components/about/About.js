@@ -33,7 +33,7 @@ const About = () =>
   <Container>
     <Column>
       <Row>
-        <InfoGraph src="/images/heads.svg" />
+        <InfoGraph src="/images/paler/heads.svg" />
         <Content>
           <h2>What is Intique?</h2>
           <p>
@@ -52,7 +52,7 @@ const About = () =>
         </Content>
       </Row>
       <Row>
-        <InfoGraph src="/images/heads.svg" />
+        <InfoGraph src="/images/paler/heads.svg" />
         <Content>
           <h2>Isn't this just another online furniture marketplace?</h2>
           <p>
@@ -75,7 +75,7 @@ const About = () =>
 
     <Column>
       <Row>
-        <InfoGraph src="/images/heads.svg" />
+        <InfoGraph src="/images/paler/heads.svg" />
         <Content>
           <h2>Why sell with us?</h2>
           <p>
@@ -92,7 +92,7 @@ const About = () =>
         </Content>
       </Row>
       <Row>
-        <InfoGraph src="/images/heads.svg" />
+        <InfoGraph src="/images/paler/heads.svg" />
         <Content>
           <h2>Why buy with Intique?</h2>
           <p>
@@ -106,7 +106,7 @@ const About = () =>
         </Content>
       </Row>
       <Row>
-        <InfoGraph src="/images/heads.svg" />
+        <InfoGraph src="/images/paler/heads.svg" />
         <Content>
           <h2>***A bit about us?***</h2>
           <p>

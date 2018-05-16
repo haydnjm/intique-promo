@@ -50,8 +50,8 @@ const Number = styled.div`
   height: 20px;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #efff4d;
-  color: #252628;
+  background-color: #f1ff5e;
+  color: #34363a;
   border-radius: 5px;
   display: flex;
   justify-content: center;

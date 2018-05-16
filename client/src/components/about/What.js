@@ -4,7 +4,7 @@ import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const What = (props) =>
     <ContentPage>
-      <ContentImage src="/images/bricks.svg" alt="heads"/>
+      <ContentImage src="/images/paler/bricks.svg" alt="heads"/>
       <ContentText>
         <p>
           At Intique we're building an online marketplace for vintage,

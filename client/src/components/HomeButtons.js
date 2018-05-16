@@ -78,7 +78,7 @@ const HomeButtons = (props) => {
             Enter our competition for your chance to win the next stylish addition to your home!
           </h3>
         </Mask>
-        <FormButtonImage src='/images/competition.svg' alt="competition"/>
+        <FormButtonImage src='/images/paler/competition.svg' alt="competition"/>
       </FormButton>
       <FormButton to="/about/what-is-intique">
         <Mask onClick={scrollToTop}>
@@ -86,7 +86,7 @@ const HomeButtons = (props) => {
             What is Intique?
           </h2>
         </Mask>
-        <GlassImg src='/images/logo.svg' alt="about"/>
+        <GlassImg src='/images/paler/logo.svg' alt="about"/>
       </FormButton>
       <FormButton to="/dealer-signup">
         <Mask onClick={scrollToTop}>
@@ -94,7 +94,7 @@ const HomeButtons = (props) => {
             Sign up now to sell with Intique for when we launch in September, and get 2 months free subscription!
           </h3>
         </Mask>
-        <FormButtonImage src='/images/shopfront.svg' alt="dealer signup"/>
+        <FormButtonImage src='/images/paler/shopfront.svg' alt="dealer signup"/>
       </FormButton>
     </Buttons>
   </div>;

@@ -28,9 +28,9 @@ const Container = styled.div`
   font-family: Nunito;
   min-height: 100vh;
   margin: 0;
-  background-color: #252628;
+  background-color: #34363a;
   color: #eddd4f;
-  background-image: url('/images/bg2.svg');
+  background-image: url('/images/paler/bg2.svg');
   background-repeat: no-repeat;
   background-size: cover;
 `;
@@ -56,7 +56,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Container>
-          <Link to="/"><Banner src="/images/final1.svg" alt="banner" /></Link>
+          <Link to="/"><Banner src="/images/paler/final1.svg" alt="banner" /></Link>
           <Content>
             <Switch>
               <Route exact path="/" component={ HomeButtons } />

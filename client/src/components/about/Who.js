@@ -3,7 +3,7 @@ import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const Who = () =>
   <ContentPage>
-    <ContentImage src="/images/us.svg" alt="Haydn and James" />
+    <ContentImage src="/images/paler/us.svg" alt="Haydn and James" />
     <ContentText>
       <p>
         Intique consists of James Broad, a seller of vintage and mid-century

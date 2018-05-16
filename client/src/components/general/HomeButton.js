@@ -24,6 +24,6 @@ const Home = styled(Link)`
 `;
 
 const HomeButton = () =>
- <Home to="/"><img src="/images/back.svg" alt="back" /></Home>;
+ <Home to="/"><img src="/images/paler/back.svg" alt="back" /></Home>;
 
 export default HomeButton;

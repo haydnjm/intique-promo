@@ -3,7 +3,7 @@ import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const WhyBuy = (props) =>
     <ContentPage>
-      <ContentImage src ="/images/shopping-bag.svg" alt="why buy with intique?" />
+      <ContentImage src ="/images/paler/shopping-bag.svg" alt="why buy with intique?" />
       <ContentText>
         <p>
           We know how time consuming it can be to find that perfect

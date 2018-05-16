@@ -15,7 +15,7 @@ const PrizesContainer = styled.div`
 
 const prizes = [
   {
-    image: '/images/chair1.jpg',
+    image: '/images/paler/chair1.jpg',
     alt: 'chair prize',
     title: 'Verner Panton C1',
     description: `
@@ -28,7 +28,7 @@ const prizes = [
     number: '1',
   },
   {
-    image: '/images/lamp1.jpg',
+    image: '/images/paler/lamp1.jpg',
     title: `1940's Machinist Lamp`,
     description: `
       An original 1940’s industrial machinists desk lamp, which has been
@@ -40,7 +40,7 @@ const prizes = [
     number: '2',
   },
   {
-    image: '/images/table1.jpg',
+    image: '/images/paler/table1.jpg',
     title: `1960's Teak Coffee Table`,
     description: `
       1960’s Teak coffee table. With a circular top and cross shaped base,

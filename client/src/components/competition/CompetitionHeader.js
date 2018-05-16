@@ -54,7 +54,7 @@ const Sub = styled.div`
 
 const CompetitionHeader = ({ showLamp, hideLamp }) =>
 <div>
-  <Banner src='./images/banner.svg' />
+  <Banner src='./images/paler/banner.svg' />
   <Panel>
     <div>
       Enter your details below and like

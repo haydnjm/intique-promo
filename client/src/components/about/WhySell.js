@@ -4,7 +4,7 @@ import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const WhySell = (props) =>
     <ContentPage>
-      <ContentImage src="/images/chat.svg" alt="Why sell with us?" />
+      <ContentImage src="/images/paler/chat.svg" alt="Why sell with us?" />
       <ContentText>
         <p>
           At Intique, we want buyers to know where, and who, they have bought the pieces

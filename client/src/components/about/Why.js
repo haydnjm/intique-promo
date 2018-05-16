@@ -3,7 +3,7 @@ import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const Why = () =>
     <ContentPage>
-      <ContentImage src="/images/heads.svg" alt="what's different?" />
+      <ContentImage src="/images/paler/heads.svg" alt="what's different?" />
       <ContentText>
         <p>
           There are many other great places online to find that G-Plan sideboard,

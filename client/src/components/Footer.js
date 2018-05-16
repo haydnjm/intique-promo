@@ -29,7 +29,7 @@ const ContentWrapper = styled.div`
 const IconWrapper = styled.div`
   font-size: 3rem;
   width: 30px;
-  color: #252628;
+  color: #34363a;
 `;
 
 const FooterImg = styled.img`
@@ -42,14 +42,14 @@ const A = styled.a`
   transition: all 0.2s ease-in-out;
 
   &:link {
-    color: #252628;
+    color: #34363a;
   }
 
   &:visited {
-    color: #252628;
+    color: #34363a;
   }
   &:hover {
-    color: #efff4d;
+    color: #f1ff5e;
   }
 
 `;
@@ -62,7 +62,7 @@ const Footer = () =>
           <FontAwesome name='instagram' />
         </A>
       </IconWrapper>
-      <Link to="/"><FooterImg src="/images/logo.svg" alt="logo"/></Link>
+      <Link to="/"><FooterImg src="/images/paler/logo.svg" alt="logo"/></Link>
       <IconWrapper>
         <A target='_blank' href='https://www.facebook.com/intiqueuk/'>
           <FontAwesome name='facebook' />

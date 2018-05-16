@@ -59,7 +59,7 @@ const DealerInfo = (props) =>
   <Wrapper>
     <H1>How the website will work:</H1>
     <Row>
-      <InfoImg src='./images/boutiques.svg' alt="boutiques"/>
+      <InfoImg src='./images/paler/boutiques.svg' alt="boutiques"/>
       <Content>
         <h3>1. Get your boutique</h3>
         <p>
@@ -70,7 +70,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row reverse>
-      <InfoImg src='./images/personal.svg' alt="personal"/>
+      <InfoImg src='./images/paler/personal.svg' alt="personal"/>
       <Content>
         <h3>2. Fill your boutique with your products, and give it your personal stamp</h3>
         <p>
@@ -81,7 +81,7 @@ const DealerInfo = (props) =>
       </Content>
     </Row>
     <Row>
-      <InfoImg src='./images/no-commission.svg' alt="no commission"/>
+      <InfoImg src='./images/paler/no-commission.svg' alt="no commission"/>
       <Content>
         <h3>3. Sell your products on your terms, with no commission</h3>
         <p>
