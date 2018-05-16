@@ -37,10 +37,10 @@ const Tab = styled(NavLink)`
   color: #f1ff5e;
   text-decoration: none;
   background-color: rgba(25,26,28,.5);
-  border-bottom: 2px solid #48488c;
+  border-bottom: 2px solid #5858a3;
 `;
 
-const activeStyle = { backgroundColor: '#48488c' };
+const activeStyle = { backgroundColor: '#5858a3' };
 
 const Content = styled(Switch)`
   margin: 0 auto;
