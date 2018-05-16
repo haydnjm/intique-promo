@@ -9,7 +9,7 @@ const Home = styled(Link)`
   left: 30px;
   width: 50px;
   height: 50px;
-  color: #ffeb59;
+  color: #f2e482;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 

@@ -42,16 +42,16 @@ const SubmitButton = styled.button`
   width: 100px;
   height: 35px;
   text-align: center;
-  border: 3px solid #ffeb59;
+  border: 3px solid #f2e482;
   border-radius: 10px;
   background-color: #3b424c;
-  color: #ffeb59;
+  color: #f2e482;
   margin: auto;
   transition: all 0.3s;
 
   &:hover {
     cursor: pointer;
-    background-color : #ffeb59;
+    background-color : #f2e482;
     color: #3b424c;
   }
 `;

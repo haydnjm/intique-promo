@@ -50,7 +50,7 @@ const Mask = styled.div`
   display: flex;
   align-items: center;
   background-color: rgba(37,38,40,0.98);
-  color: #ffeb59;
+  color: #f2e482;
   opacity: 0;
   transition: 0.3s ease-in-out;
 
