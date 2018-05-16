@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContentPage = styled.div`
   display: flex;
   align-items: center;
-  background-color: rgba(25,26,28,.5);
+  background-color: rgba(52, 54, 58, .5);
 `;
 
 export const ContentImage = styled.img`

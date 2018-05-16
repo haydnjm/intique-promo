@@ -49,7 +49,7 @@ const A = styled.a`
     color: #34363a;
   }
   &:hover {
-    color: #f1ff5e;
+    color: #ffeb59;
   }
 
 `;

@@ -50,7 +50,7 @@ const Number = styled.div`
   height: 20px;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #f1ff5e;
+  background-color: #ffeb59;
   color: #34363a;
   border-radius: 5px;
   display: flex;

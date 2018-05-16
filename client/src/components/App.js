@@ -29,7 +29,7 @@ const Container = styled.div`
   min-height: 100vh;
   margin: 0;
   background-color: #34363a;
-  color: #eddd4f;
+  color: #ffeb59;
   background-image: url('/images/paler/bg2.svg');
   background-repeat: no-repeat;
   background-size: cover;
