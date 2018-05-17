@@ -44,7 +44,7 @@ const InfoImg = styled.img`
   height: 150px;
 `;
 
-const H1 = styled.h1`
+const H1 = styled.h2`
   margin: 0 auto;
   max-width: 650px;
   text-align: center;
@@ -57,7 +57,7 @@ const H2 = styled.h1`
 
 const DealerInfo = (props) =>
   <Wrapper>
-    <H1>How the website will work:</H1>
+    <H1>We're building a new subscription based selling platform. Here's how it's going to work:</H1>
     <Row>
       <InfoImg src='./images/paler/boutiques.svg' alt="boutiques"/>
       <Content>

@@ -14,7 +14,7 @@ const What = (props) =>
           easy and enjoyable as possible for all our users.
         </p>
         <p>
-          But Initque isn't just about buying and selling
+          But Intique isn't just about buying and selling
           furniture. It's about connecting people, supporting independent
           businesses, and helping people to find the perfect addition to their
           home. Ranging from traditional furnishings to mid-century and

@@ -11,12 +11,13 @@ const WhyBuy = (props) =>
           can trust.
         </p>
         <p>
-          Here at Intique we verify all of our sellers, so you that know you are
-          buying from someone you can trust.
+          At Intique we work closely with our sellers so to provide a hassle-free
+          buying experience. We know how important it is that you can trust who you are
+          buying from, so we make sure that we get to know anyone who wants to sell with us.
         </p>
         <p>
           We aim to bring the best independent
-          dealers from across the UK to one place, and strive to give our
+          sellers from across the UK to one place, and strive to give our
           buyers a user experience like no other.
         </p>
       </ContentText>

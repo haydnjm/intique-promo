@@ -4,6 +4,8 @@ import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
 
+import TandCButtons from './TandCButtons';
+
 const FormFieldContainer = styled.div`
   margin: 20px;
 `;
@@ -87,6 +89,16 @@ export default ({ input, name, type, label, selectOptions, meta:{ touched, error
           <CheckLabel>
             <span>{label}</span>
             <input { ...input } name={ name } type='checkbox' />
+          </CheckLabel>
+        </Row>
+        <Error>{ touched && error }</Error>
+      </Wrapper>
+      :
+      type === 'tandc' ?
+      <Wrapper>
+        <Row>
+          <CheckLabel>
+            <TandCButtons />
           </CheckLabel>
         </Row>
         <Error>{ touched && error }</Error>

@@ -19,7 +19,7 @@ const Why = () =>
         <p>
           Every business has its own personality, we want to embrace that.
           At Intique you can really get to know who you are buying from, and
-          find the sellers who love the styles you love.
+          find the seller who can help you to create your ideal interior.
         </p>
       </ContentText>
     </ContentPage>;

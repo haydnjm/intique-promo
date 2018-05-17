@@ -70,9 +70,10 @@ export const COMPETITION_FIELDS = [
     type: 'select',
     label: 'Which prize would you like to enter to win?',
     selectOptions: [
-      'Select', '1 - Vitra Chair', '2 - Mechanist Lamp', '3 - Teak Table',
+      'Select', '1 - Vitra Chair', '2 - Mechinist Lamp', '3 - Teak Table',
     ],
   },
+  { name: 'tandc', type: 'tandc' },
   { name: 'antiSpam', type: 'hidden', label: 'antiSpam', required: false },
 ];
 

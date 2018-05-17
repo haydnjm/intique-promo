@@ -27,22 +27,15 @@ class DealerSignup extends Component {
   render () {
 
     const description = `We'll be launching the website in September.
-      Sign up to sell with us today for when we launch, and recieve the first two months of your
-      subscription for free!`;
+      If you register today to become a seller when we launch,
+      you'll receive the first two months of your subscription for free.
+      This offer will be ending in August, so make sure that you don't
+      miss out!`;
 
     const { handleSubmit, signupState } = this.props;
     return (
       <Container>
         <DealerInfo />
-        <BasicForm
-          description={description}
-          fields={DEALER_SIGNUP_FIELDS}
-          handleSubmit={handleSubmit}
-          onSubmit={this.onSubmit}
-          submit={'Sign up'}
-          status={ signupState }
-          title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
-        />
       </Container>
     );
   }
@@ -54,3 +47,13 @@ export default connect(mapStateToProps, actions)(reduxForm({
   validate,
   form: 'dealerSignup',
 })(DealerSignup));
+
+// <BasicForm
+//   description={description}
+//   fields={DEALER_SIGNUP_FIELDS}
+//   handleSubmit={handleSubmit}
+//   onSubmit={this.onSubmit}
+//   submit={'Sign up'}
+//   status={ signupState }
+//   title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
+// />

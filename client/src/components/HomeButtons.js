@@ -72,7 +72,7 @@ const HomeButtons = (props) => {
 
   return <div>
     <Buttons>
-      <FormButton to="/enter-competition">
+      <FormButton to="/win">
         <Mask onClick={scrollToTop}>
           <h3>
             Enter our competition for your chance to win the next stylish addition to your home!
