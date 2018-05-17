@@ -17,7 +17,7 @@ db.once('open', () => {
 
 require('./routes/survey')(app);
 
-console.log('node env: ', process.node.env);
+console.log('node env: ', process.env.NODE_ENV);
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve up production assets
