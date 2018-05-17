@@ -2,7 +2,6 @@
 
 import axios from 'axios';
 import {
-  CREATE_STATUS,
   CLEAR_STATUS,
   COMP_SUCCESS,
   COMP_FAIL,

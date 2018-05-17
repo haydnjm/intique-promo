@@ -13,17 +13,6 @@ const Anchor = styled.a`
   }
 `;
 
-const LampLink = styled.span`
-  text-decoration: underline;
-  color: white;
-  display: inline-block;
-  margin: 0;
-
-  &:hover {
-    cursor: pointer;
-  }
-`;
-
 const Banner = styled.img`
   display: block;
   width: 95%;

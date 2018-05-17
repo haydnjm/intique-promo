@@ -11,7 +11,7 @@ const What = (props) =>
           mid-century and antique furnishings. One of the many independent
           sellers across the UK has the exact style and products that you’ve
           been looking for, our job is to find them and make the experience as
-          easy and enjoyable as possible for all our users.
+          easy and enjoyable as possible for all of our users.
         </p>
         <p>
           But Intique isn't just about buying and selling

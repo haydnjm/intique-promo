@@ -2,7 +2,6 @@ import React from 'react';
 import _ from 'lodash';
 import { Field } from 'redux-form';
 import FormField from './FormField';
-import FloatingImage from '../general/FloatingImage';
 import styled, { keyframes } from 'styled-components';
 
 const floatUp = keyframes`
