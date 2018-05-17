@@ -32,4 +32,4 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 4000;
 console.log('H Port: ', PORT);
-app.listen(PORT);
+app.listen(4000);
