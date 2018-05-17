@@ -22,11 +22,15 @@ const Modal = styled.div`
   top: 10%;
   z-index: 100;
   left: 50%;
-  margin-left: -400px;
+  margin-left: -47.5%;
   background-color: #3b424c;
   color: #f2e482;
   border-radius: 10px;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
+
+  @media (min-width: 850px) {
+    margin-left: -400px;
+  }
 
   animation: ${floatUp} .3s cubic-bezier(.25,.82,.41,.99);
 `;

@@ -56,7 +56,7 @@ const CompetitionHeader = ({ showLamp, hideLamp }) =>
       Our winner will be announced on Friday the 13th of July. It might as
       well be lucky for someone...
     </p>
-    <Sub><sub>*within the UK</sub></Sub>
+    <Sub><sub>*see terms and conditions</sub></Sub>
   </Panel>
 </div>;
 
