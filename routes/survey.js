@@ -13,8 +13,8 @@ module.exports = app => {
       gender,
       profession,
       age,
-      previous = false,
       prize,
+      previous = false,
      } = req.body;
     const existingEntry = await CompetitionEntry.findOne({ email: email });
 
@@ -25,7 +25,15 @@ module.exports = app => {
       `);
     } else {
       const newEntry = new CompetitionEntry({
-        firstName, lastName, email, city, profession, age, previous,
+        firstName,
+        lastName,
+        email,
+        city,
+        profession,
+        age,
+        gender,
+        prize,
+        previous,
       }).save()
         .then(entry => {
           res.send('entry saved');
