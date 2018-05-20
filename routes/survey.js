@@ -16,6 +16,7 @@ module.exports = app => {
       prize,
       previous = false,
      } = req.body;
+
     const existingEntry = await CompetitionEntry.findOne({ email: email });
 
     if (existingEntry) {
