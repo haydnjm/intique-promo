@@ -22,7 +22,7 @@ const Modal = styled.div`
   top: 10%;
   z-index: 100;
   left: 50%;
-  margin-left: -400px;
+  margin-left: -47.5%;
   background-color: #3b424c;
   color: #f2e482;
   border-radius: 10px;
