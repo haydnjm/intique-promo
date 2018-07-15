@@ -72,14 +72,6 @@ const HomeButtons = (props) => {
 
   return <div>
     <Buttons>
-      // <FormButton to="/win">
-      //   <Mask onClick={scrollToTop}>
-      //     <h3>
-      //       Enter our competition for your chance to win the next stylish addition to your home!
-      //     </h3>
-      //   </Mask>
-      //   <FormButtonImage src='/images/paler/competition.svg' alt="competition"/>
-      // </FormButton>
       <FormButton to="/about/what-is-intique">
         <Mask onClick={scrollToTop}>
           <h2>
@@ -101,3 +93,12 @@ const HomeButtons = (props) => {
 };
 
 export default HomeButtons;
+
+// <FormButton to="/win">
+//   <Mask onClick={scrollToTop}>
+//     <h3>
+//       Enter our competition for your chance to win the next stylish addition to your home!
+//     </h3>
+//   </Mask>
+//   <FormButtonImage src='/images/paler/competition.svg' alt="competition"/>
+// </FormButton>
