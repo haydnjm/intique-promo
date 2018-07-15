@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import styled from 'styled-components';
 
+import * as actions from '../../actions';
 import { DEALER_SIGNUP_FIELDS } from './fieldSets';
-
 import { dealerSignup } from './validation';
 import BasicForm from './BasicForm';
 import DealerInfo from './DealerInfo';

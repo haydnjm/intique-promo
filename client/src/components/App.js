@@ -60,7 +60,6 @@ class App extends Component {
           <Content>
             <Switch>
               <Route exact path="/" component={ HomeButtons } />
-              <Route path="/win" component={ Competition }/>
               <Route path="/dealer-signup" component={ DealerSignup }/>
               <Route path="/about" component={ About }/>
               <Route component={ NotFound } />
