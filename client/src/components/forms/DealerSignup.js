@@ -26,10 +26,11 @@ class DealerSignup extends Component {
   render () {
 
     const description = `We'll be launching the website in September.
-      If you register today to become a seller when we launch,
-      you'll receive the first two months of your subscription for free.
-      This offer will be ending in August, so make sure that you don't
-      miss out!`;
+      When we launch you'll get your first month's subscription for
+      free and if you let us know that you'd like to get involved by
+      filling this form in, we'll also create all of your listings for you!
+      Come and be part of the new way to sell as an independent business
+      online!`;
 
     const { handleSubmit, signupState } = this.props;
     return (
@@ -42,7 +43,7 @@ class DealerSignup extends Component {
           onSubmit={this.onSubmit}
           submit={'Sign up'}
           status={ signupState }
-          title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
+          title={'All of your listings done for you for free if you decide to be an early adopter!'}
           />
       </Container>
     );
