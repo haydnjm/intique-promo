@@ -21,6 +21,7 @@ require('./routes/survey')(app);
 if (NODE_ENV === 'production') {
   // Express will serve up production assets
   app.use(express.static('client/build'));
+  console.log('production');
 
   // Express will serve up the index.html file if it doesn't recognise the route
   const path = require('path');
@@ -28,6 +29,8 @@ if (NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 
+} else {
+  console.log('development');
 }
 
 app.listen(8080);
