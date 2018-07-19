@@ -53,12 +53,6 @@ module.exports = app => {
       website,
       email,
       city,
-      favePlatform,
-      reason,
-      listingValue,
-      averagePrice,
-      shopfront,
-      fees,
     } = req.body;
 
     const existingEntry = await DealerSignup.findOne({ email: email });
@@ -72,12 +66,6 @@ module.exports = app => {
         website,
         email,
         city,
-        favePlatform,
-        reason,
-        listingValue,
-        averagePrice,
-        shopfront,
-        fees,
       }).save()
         .then(entry => {
           res.send('entry saved');
