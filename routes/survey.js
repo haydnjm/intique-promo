@@ -55,6 +55,9 @@ module.exports = app => {
       city,
     } = req.body;
 
+    res.send('hello');
+    return;
+
     const existingEntry = await DealerSignup.findOne({ email: email });
 
     if (existingEntry) {
