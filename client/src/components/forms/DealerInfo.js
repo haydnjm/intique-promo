@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Wrapper = styled.div`
-  flex: 1.5 1 0
+const ContentWrapper = styled.div`
+  flex-grow: 2;
   min-width: 300px;
+  margin: 0;
+  padding-left: 50px;
 
   width: 90%;
   max-width: 750px;
 
+  @media (max-width: 1250px) {
+    padding: 10px;
+  }
 `;
 
 const Row = styled.div`
@@ -56,7 +61,7 @@ const H2 = styled.h1`
 `;
 
 const DealerInfo = (props) =>
-  <Wrapper>
+  <ContentWrapper>
     <H1>We're building a new subscription based selling platform. Here's how it's going to work:</H1>
     <Row>
       <InfoImg src='./images/paler/boutiques.svg' alt="boutiques"/>
@@ -97,6 +102,6 @@ const DealerInfo = (props) =>
         take a look <StyledLink to="/about/what-is-intique">here!</StyledLink>
     </H2>
     </div>
-  </Wrapper>;
+  </ContentWrapper>;
 
 export default DealerInfo;

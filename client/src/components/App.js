@@ -30,21 +30,22 @@ const Container = styled.div`
   margin: 0;
   background-color: #34363a;
   color: #f2e482;
-  background-image: url('/images/paler/bg2.svg');
+  background-image: url('/images/paler/bg3.svg');
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
 const Banner = styled.img`
-  margin: 0 0 30px 0;
-  width: 100%;
-
-  @media (max-width: 600px) {
-    width: 200%;
-    margin-left: -50%;
-  }
+  width: 40%;
+  min-width: 300px;
+  display: block;
+  margin: 50px auto 50px;
 
 `;
+// @media (max-width: 600px) {
+//   width: 200%;
+//   margin-left: -50%;
+// }
 
 const Content = styled.div`
   position: relative;
@@ -56,7 +57,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Container>
-          <Link to="/"><Banner src="/images/paler/final1.svg" alt="banner" /></Link>
+          <Link to="/"><Banner src="/images/paler/simple title.svg" alt="banner" /></Link>
           <Content>
             <Switch>
               <Route exact path="/" component={ HomeButtons } />

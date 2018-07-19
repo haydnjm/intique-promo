@@ -35,6 +35,15 @@ class DealerSignup extends Component {
     return (
       <Container>
         <DealerInfo />
+        <BasicForm
+          description={description}
+          fields={DEALER_SIGNUP_FIELDS}
+          handleSubmit={handleSubmit}
+          onSubmit={this.onSubmit}
+          submit={'Sign up'}
+          status={ signupState }
+          title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
+          />
       </Container>
     );
   }
@@ -46,13 +55,3 @@ export default connect(mapStateToProps, actions)(reduxForm({
   validate,
   form: 'dealerSignup',
 })(DealerSignup));
-
-// <BasicForm
-//   description={description}
-//   fields={DEALER_SIGNUP_FIELDS}
-//   handleSubmit={handleSubmit}
-//   onSubmit={this.onSubmit}
-//   submit={'Sign up'}
-//   status={ signupState }
-//   title={'GET 2 MONTHS SUBSCRIPTION FOR FREE'}
-// />

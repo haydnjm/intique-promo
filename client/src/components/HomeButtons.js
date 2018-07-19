@@ -20,9 +20,12 @@ const FormButton = styled(Link)`
   margin: 50px;
   overflow: hidden;
 
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 3px 15px rgba(10,10,20,0.75);
+  border-top: 5px solid #999;
+  border-left: 5px solid #999;
+  border-bottom: 5px solid #222;
+  border-right: 5px solid #222;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px 5px rgba(10,10,20,0.9);
   transition: 0.3s ease-in-out;
 
   &:hover {
@@ -38,7 +41,6 @@ const FormButton = styled(Link)`
 const FormButtonImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit-cover;
 `;
 
 const Mask = styled.div`
