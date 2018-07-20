@@ -26,9 +26,10 @@ class DealerSignup extends Component {
   render () {
 
     const description = `We'll be launching the website in September.
-      When we launch you'll get your first month's subscription for
-      free and if you let us know that you'd like to get involved by
-      filling this form in, we'll also create all of your listings for you!
+      If you let us know here that you might like to get involved when we do,
+      we'll create all of your initial listings for you for free! Don't
+      worry, you're not committing to anything now; just giving us a heads
+      up to keep you updated on when you'll be able to sign up.
       Come and be part of the new way to sell as an independent business
       online!`;
 
@@ -43,7 +44,9 @@ class DealerSignup extends Component {
           onSubmit={this.onSubmit}
           submit={'Sign up'}
           status={ signupState }
-          title={'All of your listings done for you for free if you decide to be an early adopter!'}
+          title={
+            `Let us know that you'd like to get involved when we launch!`
+          }
           />
       </Container>
     );
