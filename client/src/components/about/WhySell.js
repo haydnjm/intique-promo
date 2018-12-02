@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { ContentPage, ContentImage, ContentText } from './StyledComponents';
 
 const WhySell = (props) =>
@@ -12,7 +11,7 @@ const WhySell = (props) =>
         </p>
         <p>
           This is something that you don't get from sales with our commission-based
-          competitors. Here's how we aim to acheive it:
+          competitors. Here&apos;s how we aim to acheive it:
         </p>
         <ul>
           <li>Personalised boutiques - put your stamp on your sales</li>

@@ -7,7 +7,6 @@ import Why from './Why';
 import WhySell from './WhySell';
 import WhyBuy from './WhyBuy';
 import Who from './Who';
-import NotFound from '../NotFound';
 
 const Container = styled.div`
   width: 95%;
@@ -72,7 +71,6 @@ const About = () =>
       <Route path="/about/why-sell-with-us" component={ WhySell } />
       <Route path="/about/why-buy-with-us" component={ WhyBuy } />
       <Route path="/about/who-are-we" component={ Who } />
-      <Route component={ NotFound } />
     </Content>
   </Container>;
 

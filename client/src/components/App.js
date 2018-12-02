@@ -15,7 +15,7 @@ import Nunito from 'typeface-nunito';
 injectGlobal`
   @font-face {
     font-family: Nunito;
-    src: url('${Nunito}') fromat('truetype');
+    src: url('${Nunito}') format('truetype');
   }
 `;
 
